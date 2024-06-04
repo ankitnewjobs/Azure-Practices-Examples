@@ -15,6 +15,9 @@
 
 # Now, we need to connect using Bastion because there is no Public IP
 
+
+- ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1f5294b1-507a-4c0a-9cd5-64a4e5c41616)
+
 - Open the VM and go to the Connect menu. Under the Connect menu, you have Bastion Service.
 - Click on it and provide username and Password
   
@@ -34,7 +37,6 @@
 
 - 
 
-- ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1f5294b1-507a-4c0a-9cd5-64a4e5c41616)
 
 
 
