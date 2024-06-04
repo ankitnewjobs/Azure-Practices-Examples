@@ -33,7 +33,7 @@
 - Multi-Factor Authentication (MFA)
 - Audit and Monitoring
   
-- A) Change the authentication type to SSH Private Key from Local File, provide the user name and Pem Key, and click on the Connect option. It will open Nagnix on the New Terminal of your Browser.
+#  A) Change the authentication type to SSH Private Key from Local File, provide the user name and Pem Key, and click on the Connect option. It will open Nagnix on the New Terminal of your Browser.
 
 - we can perform different operations in the Bastion Like Access Control, Locks, Role Assignment, etc.
 
