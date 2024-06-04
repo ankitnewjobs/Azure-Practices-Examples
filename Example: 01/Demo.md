@@ -20,6 +20,18 @@
 
 - Open the VM and go to the Connect menu. Under the Connect menu, you have Bastion Service.
 - Click on it and provide username and Password
+
+- # Purpose of Azure Bastion
+
+- Secure Remote Access
+- Elimination of Public Internet Exposure
+- Reduced Attack Surface
+- Azure Bastion Integration
+- Simplified Connectivity:
+- Azure Portal-Based Access
+- Role-Based Access Control (RBAC)
+- Multi-Factor Authentication (MFA)
+- Audit and Monitoring
   
 - A) Change the authentication type to SSH Private Key from Local File, provide the user name and Pem Key, and click on the Connect option. It will open Nagnix on the New Terminal of your Browser.
 
