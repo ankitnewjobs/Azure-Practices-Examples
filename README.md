@@ -1,3 +1,3 @@
 # Azure-Practices-Examples
 
-In this repostry You will get the Idea about Different Pratical Implementaion of Azure Services
+In this repository  You will get the Idea about Different Practical Implementation of Azure Services
