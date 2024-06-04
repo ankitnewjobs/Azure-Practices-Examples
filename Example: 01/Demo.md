@@ -31,11 +31,25 @@
 
 - sudo apt install nginx ----to install Ngaix]
 
-- Creating a DNAT rule for enabling to open the VM by Firewalll
+- # Creating a DNAT rule for enabling the opening of the VM by Firewall
 
-- 
+- ![af50a415-7a80-4cb2-a31b-c00fc25ca890](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/fb487dd5-cb78-4c64-a7bb-fd896d0358d4)
 
-- 
+- Then click on the Add Button.
+
+- ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/df225b3c-95b6-4c4d-a4a8-b6237994e3f9)
+
+- ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/58fe809c-e6d1-4f3b-a913-88e610ed53a4)
+
+# Now My Web-App Start Working 
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2f4e415b-a0c0-4e89-b2a6-23ff87a22992)
+
+
+
+  
+
+  
 
 
 
