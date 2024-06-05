@@ -122,7 +122,12 @@ Membership type	Assigned
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e89c3449-b96f-49b5-a89c-243270387168)
 
 
+# Key takeaways
 
+A tenant represents your organization and helps you to manage a specific instance of Microsoft Cloud services for your internal and external users.
+Microsoft Entra ID has user and guest accounts. Each account has a level of access specific to the scope of work expected to be done.
+Groups combine together related users or devices. There are two types of groups including Security and Microsoft 365.
+Group membership can be statically or dynamically assigned.
 
 
 
