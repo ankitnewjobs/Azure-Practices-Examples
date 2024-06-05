@@ -13,3 +13,5 @@
 - update existing resources with resource tags
 
 - use resource locks to protect configured resources
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/94eb0315-c37e-4304-a5b2-23468619dcc1)
