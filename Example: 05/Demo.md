@@ -175,3 +175,236 @@ Region	(US) East US
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/57d2b8d3-f248-4b09-86d1-3ef683521ac5)
 
 # Task 3: Create and configure communication between an Application Security Group and a Network Security Group
+
+In this task, we create an Application Security Group and a Network Security Group. The NSG will have an inbound security rule that allows traffic from the ASG. The NSG will also have an outbound rule that denies access to the internet.
+
+1. In the Azure portal, search for and select Application security groups.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6f65f27b-bf56-4926-bce3-ef61a4213268)
+
+2. Click Create and provide the basic information.
+
+- Setting	Value
+Subscription	your subscription
+Resource group	az104-rg4
+Name	asg-web
+Region	East US
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2160caac-0669-40d5-82a9-c29bbcf39a52)
+
+3. Click Review + Create and then after the validation click Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3d0e1c9e-4d03-44d4-b8ab-3db48198a976)
+
+# Create the Network Security Group and associate it with the ASG subnet
+
+1. In the Azure portal, search for and select Network security groups.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/34f84609-7baa-49c5-845d-318e59dbe1df)
+
+2. Select + Create and provide information on the Basics tab.
+
+- Setting	Value
+- 
+Subscription	your subscription
+Resource group	az104-rg4
+Name	myNSGSecure
+Region	East US
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/834d3b46-7e96-4ae0-af4e-e23195679cf4)
+
+3. Click Review + Create and then after the validation click Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ba0b0b2a-81ab-4480-bc0f-1433fd8b04b1)
+
+4. After the NSG is deployed, click Go to the resource.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0957bed4-413c-4ecf-a5a0-9bc32a8af101)
+
+5. Under Settings click Subnets and then Associate.
+
+- Setting	Value
+
+Virtual network	CoreServicesVnet (az104-rg4)
+Subnet	SharedServicesSubnet
+Click OK to save the association.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/bd42d827-7b2d-40f0-8a83-6c959a273767)
+
+6. Click OK to save the association.
+   
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f489e3a3-f640-4e83-9867-7f73b5168b32)
+
+# Configure an inbound security rule to allow ASG traffic
+
+1. Continue working with your NSG. In the Settings area, select Inbound security rules.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ec4bcb06-245e-4996-ae37-673441ee8307)
+
+2. Review the default inbound rules. Notice that only other virtual networks and load balancers are allowed access.
+
+3. Select + Add.
+
+4. On the Add inbound security rule blade, use the following information to add an inbound port rule. This rule allows ASG traffic. When you are finished, select Add.
+
+- Setting	Value
+
+Source	Application security group
+Source application security groups	asg-web
+Source port ranges	*
+Destination	Any
+Service	Custom (notice your other choices)
+Destination port ranges	80,443
+Protocol	TCP
+Action	Allow
+Priority	100
+Name	AllowASG
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6f2c5c10-2ddb-4733-84e7-b824ee4c2d70)
+
+# Configure an outbound NSG rule that denies Internet access
+
+1. After creating your inbound NSG rule, select Outbound security rules.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/08afaceb-5f69-42b4-b8b7-f64c1c61eb1e)
+
+2. Notice the AllowInternetOutboundRule rule. Also, notice the rule cannot be deleted and the priority is 65001.
+
+3. Select + Add and then configure an outbound rule that denies access to the internet. When you are finished, select Add.
+
+Setting	Value
+Source	Any
+Source port ranges	*
+Destination	Service tag
+Destination service tag	Internet
+Service	Custom
+Destination port ranges	8080
+Protocol	Any
+Action	Deny
+Priority	4096
+Name		DenyAnyCustom8080Outbound
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/7431514d-8a15-4a14-a85d-674c9070d9ec)
+
+# Task 4: Configure public and private Azure DNS zones
+
+In this task, you will create and configure public and private DNS zones.
+
+# Configure a public DNS zone
+
+You can configure Azure DNS to resolve host names in your public domain. For example, if you purchased the contoso.xyz domain name from a domain name registrar, you can configure Azure DNS to host the contoso.com domain and resolve www.contoso.xyz to the IP address of your web server or web app.
+
+1. In the portal, search for and select DNS zones.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9b6af4b8-85c4-4d37-87b8-e66a387641be)
+
+2. Select + Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/40727a29-5a76-447c-adce-b8fc783a8914)
+
+3. Configure the Basics tab.
+
+Property	Value
+Subscription	Select your subscription
+Resource group	az-104-rg4
+Name	contoso2.com (if reserved adjust the name)
+
+4. Select Review Create and then Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ce378227-93a9-4ca2-8c9c-deab1c296bb7)
+
+5. Wait for the DNS zone to deploy and then select Go to resource.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d493d256-0080-4d82-96b6-aee26efd01ee)
+
+6. On the Overview blade notice the names of the four Azure DNS name servers assigned to the zone. Copy one of the name server addresses. You will need it in a future step.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2ce9ece3-24ff-4a78-9d5d-278dd39374e5)
+
+7. Select + Record set. You add a virtual network link record for each virtual network that needs private name-resolution support.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/eb78dcfc-304e-4d89-b1bf-88e1bb97da99)
+
+Property	Value
+Name	www
+Type	A
+TTL	1
+IP address	10.1.1.4
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1b5a634e-ac27-48b2-9d9b-85b1b25b7977)
+
+8. Select OK and verify that contoso2.com has an A record set named www.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/dc048ddb-0808-4a37-b9d4-263555c25138)
+
+Open a command prompt, and run the following command:
+
+Shell nslookup www.contoso.com <name server name>
+
+1. Verify the hostname www.contoso.com resolves to the IP address you provided. This confirms name resolution is working correctly.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/666e6514-0222-4aa2-9fb3-195d5aed16e7)
+
+# Configure a private DNS zone
+
+A private DNS zone provides name resolution services within virtual networks. A private DNS zone is only accessible from the virtual networks that it is linked to and can’t be accessed from the internet.
+
+1. In the portal, search for and select Private DNS zones.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3adc0ad5-5efc-48da-8693-019e49f5e36e)
+
+2. Select + Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/87df00e9-f9fc-462c-8644-4060bd3129a4)
+
+3. On the Basics tab of Create private DNS zone, enter the information as listed in the table below:
+
+- Property	Value
+  
+Subscription	Select your subscription
+Resource group	az-104-rg4
+Name	private.contoso.com (adjust if you had to rename)
+Region	East US
+
+4. Select Review Create and then Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/23b4175c-ec1c-4674-9def-f38443876c10)
+
+5. Wait for the DNS zone to deploy and then select Go to resource.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0cb715c8-02f4-40b2-a035-8bba91b2a214)
+
+6. Notice on the Overview blade there are no name server records.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1619dd5b-d6a5-4cc7-b2f6-cacd918dd9d1)
+
+7. Select + Virtual network links and then select + Add.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8a3d9647-9a56-41ff-9807-275da97247e9)
+
+Property	Value
+Link name	manufacturing-link
+Virtual network	ManufacturingVnet
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a1367791-d734-4b5a-b1af-9ad12e586a33)
+
+8. Select OK and wait for the link to create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8041559d-5d78-4a33-ac2b-2d838d99af46)
+
+9. From the Overview blade select + Record set. You would now add a record for each virtual machine that needs private name-resolution support.
+
+Property	Value
+Name	sensorvm
+Type	A
+TTL	1
+IP address	10.1.1.4
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/b039e558-2df6-4ac5-9974-6577e9d561aa)
+
+# Cleanup your resources
+If you are working with your subscription take a minute to delete the lab resources. This will ensure resources are freed up and cost is minimized. The easiest way to delete the lab resources is to delete the lab resource group.
+
+- In the Azure portal, select the resource group, select Delete the resource group, Enter the resource group name, and then click Delete.
+- Using Azure PowerShell, Remove-AzResourceGroup -Name resourceGroupName.
+- Using the CLI, az group delete --name resourceGroupName.
