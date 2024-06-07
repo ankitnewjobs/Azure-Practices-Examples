@@ -34,6 +34,7 @@ Implement virtual networking. Create and configure a virtual network, deploy vir
 4. Complete the Basics tab for the CoreServicesVnet.
 
 Option	Value
+
 Resource Group	az104-rg4 (if necessary, create new)
 Name	CoreServicesVnet
 Region	(US) East US
@@ -47,7 +48,7 @@ Region	(US) East US
 6. Select + Add a subnet. Complete the name and address information for each subnet. Be sure to select Add for each new subnet.
 
 - Subnet	Option	Value
-- 
+  
 - SharedServicesSubnet	Subnet name	SharedServicesSubnet
  	Starting Address	10.20.10.0
  	Size	/24
@@ -72,9 +73,9 @@ Region	(US) East US
 
 12. Download the template.
    #  template.json
+   
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6c6ac692-26c6-4c4a-bb40-d03f84b9f3ff)
 
-    ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1a4a5b07-442a-4ccb-9b34-a495ef1d06d2)
-    
 # parameters.json
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/701afd30-f41c-4c06-bc99-21961bd138ba)
