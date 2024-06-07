@@ -1,3 +1,5 @@
+# Implement Virtual Networking
+
 # Lab scenario
 
 - Your global organization plans to implement virtual networks. The immediate goal is to accommodate all the existing resources. However, the organization is in a growth phase and wants to ensure additional capacity for growth.
