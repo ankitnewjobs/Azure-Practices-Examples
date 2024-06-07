@@ -6,6 +6,7 @@ Your organization is building a new lab environment for pre-production testing o
 
 # Job skills
 Task 1: Create and configure user accounts.
+
 Task 2: Create groups and add members.
 
 # Task 1: Create and configure user accounts.
