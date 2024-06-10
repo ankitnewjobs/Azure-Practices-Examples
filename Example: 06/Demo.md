@@ -143,4 +143,7 @@ Disk_name	az104-disk2
 
 16. In the Settings section, click Deployments.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/68ef7a54-f9a4-44c4-b101-0b68e0bce078)
+
 17. Select a deployment and review the content of the Input and Template blades.
+
