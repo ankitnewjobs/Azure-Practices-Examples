@@ -1,4 +1,4 @@
-![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/82bce4a0-bd82-45df-8120-2d444bfee949)# Manage Azure resources by using Azure Resource Manager Templates
+# Manage Azure resources by using Azure Resource Manager Templates
 
 # Lab introduction
 
