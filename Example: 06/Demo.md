@@ -70,3 +70,51 @@ Size	32 Gib
 10. Use File Explorer to extract the content of the downloaded file into the Downloads folder on your computer. Notice there are two JSON files (template and parameters).
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/adda1e45-ba19-40e9-8e10-1525c1b3e29f)
+
+# Task 2: Edit an Azure Resource Manager template and then redeploy the template
+
+- In this task, you use the downloaded template to deploy a new managed disk. This task outlines how to quicky and easily repeat deployments.
+
+1. In the Azure portal, search for and select Deploy a custom template.
+
+2. On the Custom deployment blade, notice there is the ability to use a Quickstart template. There are many built-in templates as shown in the drop-down menu.
+
+3. Instead of using Quickstart, select Build your own template in the editor.
+
+4. On the Edit template blade, click Load file and upload the template.json file you downloaded to the local disk.
+
+5. Within the editor pane, make these changes.
+
+- Change disks_az104_disk1_name to disk_name (two places to change)
+- Change az104-disk1 to az104-disk2 (one place to change)
+
+6. Notice this is a Standard disk. The location is east us. The disk size is 32GB.
+
+7. Save your changes.
+
+8. Don’t forget the parameters file. Select Edit parameters, click Load file and upload the parameters.json.
+
+9. Make this change so it matches the template file.
+
+- Change disks_az104_disk1_name to disk_name (one place to change)
+
+10. Save your changes.
+
+11. Complete the custom deployment settings:
+
+- Setting	Value
+
+Subscription	your subscription
+Resource Group	az104-rg3
+Region	(US) East US)
+Disk_name	az104-disk2
+
+12. Select Review + Create and then select Create.
+
+13. Select Go to resource. Verify az104-disk2 was created.
+
+14. On the Overview blade, select the resource group, az104-rg3. You should now have two disks.
+
+15. In the Settings section, click Deployments.
+
+16. Select a deployment and review the content of the Input and Template blades.
