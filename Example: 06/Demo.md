@@ -147,3 +147,55 @@ Disk_name	az104-disk2
 
 17. Select a deployment and review the content of the Input and Template blades.
 
+# Task 3: Configure the Cloud Shell and deploy a template with Azure PowerShell
+
+- In this task, you work with the Azure Cloud Shell and Azure PowerShell. Azure Cloud Shell is an interactive, authenticated, browser-accessible terminal for managing Azure resources. It provides the flexibility of choosing the shell experience that best suits the way you work, either Bash or PowerShell. In this task, you use **PowerShell** to deploy a template.
+
+1. Select the Cloud Shell icon in the top right of the Azure Portal. Alternatively, you can navigate directly to
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/90b1958a-5772-4f15-8ae5-a318846c15f2)
+
+2. When prompted to select either Bash or PowerShell, select PowerShell.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c2735913-e838-4e8e-b6aa-17533508fa5c)
+
+3. On the Getting Started screen select Mount storage account and then I want to create a storage account.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0dbb4231-288a-450e-838a-1c6a8080b726)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/23ccbbf1-8e79-4c38-8e2f-b6df58fb18f8)
+
+- Settings	Values
+- 
+Subscription	Select your subscription
+Resource Group	az104-rg3
+Region	select your region
+Storage account (Create new)	must be globally unique, between 3 and 24 characters in length, and use numbers and lowercase letters only
+File share (Create new)	fs-cloudshell
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/25b2ea18-880f-4295-aed7-3f395b377b28)
+
+4. When completed select Next. You only need to do this the first time you use the Cloud Shell. It will take a couple of minutes to provision the storage.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f7efe50b-9d97-4205-99f8-a224fa0462b2)
+
+5. Use the Upload/Download files icon to upload the template and parameters file from the downloads directory. You will need to upload each file separately.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a26c7633-961b-4ba0-8cf6-ecfd9f1e68d5)
+
+6. Verify your files are available in the Cloud Shell storage.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d76e0755-05ab-4db2-a200-17b80839ecb8)
+
+7. Select the Editor (curly brackets) icon and navigate to the template JSON file.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/43ef8c06-adbb-4929-8220-1c3bc596ffdd)
+
+8. Make a change. For example, change the disk name to az104-disk3. Use Ctrl +S to save your changes.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c78c1752-190a-4e4b-8395-fc256573f56a)
+
+To deploy to a resource group, use New-AzResourceGroupDeployment.
+
+- Code:  New-AzResourceGroupDeployment -ResourceGroupName az104-rg3 -TemplateFile template.json -TemplateParameterFile parameters.json
+
