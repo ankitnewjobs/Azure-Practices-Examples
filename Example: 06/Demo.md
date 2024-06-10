@@ -1,4 +1,4 @@
-# Manage Azure resources by using Azure Resource Manager Templates
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/82bce4a0-bd82-45df-8120-2d444bfee949)# Manage Azure resources by using Azure Resource Manager Templates
 
 # Lab introduction
 
@@ -73,30 +73,48 @@ Size	32 Gib
 
 # Task 2: Edit an Azure Resource Manager template and then redeploy the template
 
-- In this task, you use the downloaded template to deploy a new managed disk. This task outlines how to quicky and easily repeat deployments.
+- In this task, you use the downloaded template to deploy a new managed disk. This task outlines how to quickly and easily repeat deployments.
 
 1. In the Azure portal, search for and select Deploy a custom template.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/14ccdb97-1717-4fbd-8898-7ad6e1cfa0e7)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4e507123-332c-47bb-bdce-533c346b6cd7)
+
 2. On the Custom deployment blade, notice there is the ability to use a Quickstart template. There are many built-in templates as shown in the drop-down menu.
 
-3. Instead of using Quickstart, select Build your own template in the editor.
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a828de74-a3e7-4892-bf0f-6484d10dd776)
+
+3. Instead of using Quickstart, select Build your template in the editor.
 
 4. On the Edit template blade, click Load file and upload the template.json file you downloaded to the local disk.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/817a3475-1a81-4cc7-b85e-66276dd797bc)
 
 5. Within the editor pane, make these changes.
 
 - Change disks_az104_disk1_name to disk_name (two places to change)
 - Change az104-disk1 to az104-disk2 (one place to change)
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c5765252-3487-430f-9e6d-58dabe907d71)
+
 6. Notice this is a Standard disk. The location is east us. The disk size is 32GB.
 
 7. Save your changes.
 
-8. Don’t forget the parameters file. Select Edit parameters, click Load file and upload the parameters.json.
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d988c7b1-b41d-45ac-9c85-8db246fa674b)
+
+8. Don’t forget the parameters file. Select Edit parameters, click Load file, and upload the parameters.json.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/71c05c18-ebb8-4213-b1c6-c9e353e29b1d)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a4f9e535-cf0f-42a7-9c7d-4b26e4b172b4)
 
 9. Make this change so it matches the template file.
 
 - Change disks_az104_disk1_name to disk_name (one place to change)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0edd8548-ad66-4d5b-9bfe-cddef8121e1c)
 
 10. Save your changes.
 
@@ -109,12 +127,20 @@ Resource Group	az104-rg3
 Region	(US) East US)
 Disk_name	az104-disk2
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/dbc0c886-3f18-47fc-ad68-ab86445d56be)
+
 12. Select Review + Create and then select Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/eaab5b03-ebd0-4dfc-adda-de3b19033c41)
 
 13. Select Go to resource. Verify az104-disk2 was created.
 
-14. On the Overview blade, select the resource group, az104-rg3. You should now have two disks.
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1f49d682-275a-42b2-944c-0a4b6d4debe0)
 
-15. In the Settings section, click Deployments.
+15. On the Overview blade, select the resource group, az104-rg3. You should now have two disks.
 
-16. Select a deployment and review the content of the Input and Template blades.
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/7358bf38-6810-453f-851a-d4fcf0395979)
+
+16. In the Settings section, click Deployments.
+
+17. Select a deployment and review the content of the Input and Template blades.
