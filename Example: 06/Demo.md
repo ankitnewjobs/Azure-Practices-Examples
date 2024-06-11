@@ -196,8 +196,17 @@ File share (Create new)	fs-cloudshell
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/49de1201-4fc8-45a0-b647-3b64dcf650ba)
 
-To deploy to a resource group, use New-AzResourceGroupDeployment.
+9. To deploy to a resource group, use New-AzResourceGroupDeployment.
 
 - Code:  New-AzResourceGroupDeployment -ResourceGroupName az104-rg3 -TemplateFile template.json -TemplateParameterFile parameters.json
 
-# To be Continued
+10. Ensure the command completes and the ProvisioningState is Succeeded.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a5515756-3594-493e-84a5-cf45eccf2f5e)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a92d45a1-2a87-45d3-8260-2807b4137d5c)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/7fe23d43-d04f-4129-ba16-c93a6e416f5e)
+
+# Task 4: Deploy a template with the CLI
+**
