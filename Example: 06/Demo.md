@@ -166,14 +166,15 @@ Disk_name	az104-disk2
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/23ccbbf1-8e79-4c38-8e2f-b6df58fb18f8)
 
 - Settings	Values
-- 
+  
 Subscription	Select your subscription
 Resource Group	az104-rg3
 Region	select your region
 Storage account (Create new)	must be globally unique, between 3 and 24 characters in length, and use numbers and lowercase letters only
 File share (Create new)	fs-cloudshell
 
-![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/25b2ea18-880f-4295-aed7-3f395b377b28)
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/cd8dff46-6e0e-4fff-82b9-344e635a84eb)
+
 
 4. When completed select Next. You only need to do this the first time you use the Cloud Shell. It will take a couple of minutes to provision the storage.
 
