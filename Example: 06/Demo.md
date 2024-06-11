@@ -186,15 +186,15 @@ File share (Create new)	fs-cloudshell
 
 6. Verify your files are available in the Cloud Shell storage.
 
-![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d76e0755-05ab-4db2-a200-17b80839ecb8)
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c6cab262-eb04-4005-afda-c12b54c9cddd)
 
 7. Select the Editor (curly brackets) icon and navigate to the template JSON file.
 
-![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/43ef8c06-adbb-4929-8220-1c3bc596ffdd)
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/82ab7710-b87f-4a3b-9520-7914535f0123)
 
 8. Make a change. For example, change the disk name to az104-disk3. Use Ctrl +S to save your changes.
 
-![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c78c1752-190a-4e4b-8395-fc256573f56a)
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/49de1201-4fc8-45a0-b647-3b64dcf650ba)
 
 To deploy to a resource group, use New-AzResourceGroupDeployment.
 
