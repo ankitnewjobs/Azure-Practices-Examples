@@ -250,3 +250,46 @@ Diagnostic tests Default
 5. The test connection should succeed because peering has been configured. Your computer name and remote address in this graphic may be different.
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/536b1040-08b2-4cff-9d2e-3cfcd195427d)
+
+# Task 6: Create a custom route
+
+- In this task, you want to control network traffic between the perimeter subnet and the internal core services subnet. A virtual network appliance will be installed in the core services subnet and all traffic should be routed there.
+
+1. select the CoreServicesVnet.
+
+2. Select Subnets and then + Create. Be sure to Save your changes.
+
+- Setting	Value
+
+Name	perimeter
+Subnet address range	10.0.1.0/24
+
+3. In the Azure portal, search for and select Route tables, and then select Create.
+
+Setting	Value
+Subscription	your subscription
+Resource group	az104-rg5
+Region	East US
+Name	rt-CoreServices
+Propagate gateway routes	No
+
+4. After the route table deploys, select Go to resource.
+
+5. Select Routes and then + Add. Create a route from the future NVA to the CoreServices virtual network.
+
+- Setting	Value
+
+Route name	PerimetertoCore
+Destination type	IP Addresses
+Destination IP addresses	10.0.0.0/16 (core services virtual network)
+Next hop type	Virtual appliance (notice your other choices)
+Next hop address	10.0.1.7 (future NVA)
+
+6. Select + Add when the route is completed. The last thing to do is associate the route with the subnet.
+
+7. Select Subnets and then Associate. Complete the configuration.
+
+- Setting	Value
+
+Virtual network	CoreServicesVnet
+Subnet	Core
