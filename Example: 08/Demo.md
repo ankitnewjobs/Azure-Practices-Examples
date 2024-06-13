@@ -257,6 +257,8 @@ Diagnostic tests Default
 
 1. select the CoreServicesVnet.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/aaa8e822-9d32-498e-af4c-7438b078754f)
+
 2. Select Subnets and then + Create. Be sure to Save your changes.
 
 - Setting	Value
@@ -264,7 +266,11 @@ Diagnostic tests Default
 Name	perimeter
 Subnet address range	10.0.1.0/24
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c653b4bb-4bbb-4ab2-8c6c-ffcb6899cd2f)
+
 3. In the Azure portal, search for and select Route tables, and then select Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0283f7f6-94cc-4d05-b77c-4a7f6d6bece6)
 
 Setting	Value
 Subscription	your subscription
@@ -273,7 +279,13 @@ Region	East US
 Name	rt-CoreServices
 Propagate gateway routes	No
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/290065b4-06ba-4e2e-9e32-6265d4c472bf)
+
 4. After the route table deploys, select Go to resource.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0347da3d-0f25-4eba-a79c-1c6082cc6617)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/59ac9119-2317-4938-abe6-73f088c138f9)
 
 5. Select Routes and then + Add. Create a route from the future NVA to the CoreServices virtual network.
 
@@ -285,9 +297,16 @@ Destination IP addresses	10.0.0.0/16 (core services virtual network)
 Next hop type	Virtual appliance (notice your other choices)
 Next hop address	10.0.1.7 (future NVA)
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2f099b8c-9bbd-4a08-9b3b-392ff118a374)
+
 6. Select + Add when the route is completed. The last thing to do is associate the route with the subnet.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ea2860dd-b09c-4fa3-8537-21d57882b4e9)
+
 7. Select Subnets and then Associate. Complete the configuration.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/5cb5e472-10d3-4453-a9cd-2b7877a4ac39)
+
 
 - Setting	Value
 
