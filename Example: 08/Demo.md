@@ -89,14 +89,13 @@ Subnet address range	10.0.0.0/24
 
 - In this task, you create a manufacturing services virtual network with a virtual machine.
 
-![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/45baab44-5fee-45e1-b19f-233fd3683486)
-
 1. From the Azure portal, search for and navigate to Virtual Machines.
 
-![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/849cd0a1-ec3f-4552-b2dd-ef8366e13b2d)
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/45baab44-5fee-45e1-b19f-233fd3683486)
 
 2. Select Create from the virtual machines page then select Azure Virtual Machine.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/849cd0a1-ec3f-4552-b2dd-ef8366e13b2d)
 3. On the Basics tab, use the following information to complete the form, and then select Next: Disks >. For any setting not specified, leave the default value.
 
 - Setting	Value
@@ -113,6 +112,8 @@ Username	ankit
 Password	Provide a complex password
 Public inbound ports	None
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c571e90a-c1d4-4ec8-88e2-0a2ef9739971)
+
 4. On the Disks tab take the defaults and then select Next: Networking >.
 
 5. On the Networking tab, for Virtual network, select Create new.
@@ -125,9 +126,49 @@ Address Range	172.16.0.0/16
 Subnet Name	Manufacturing
 Subnet address range	172.16.0.0/24
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/366deccc-db12-4ee6-89aa-98efa1ed1672)
+
 7. Select the Monitoring tab. For Boot Diagnostics, select Disable.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/bd75fac8-ec76-499b-8fdb-b3b898a40410)
 
 8. Select Review + Create, and then select Create
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/871f5a4b-89e3-4063-bae2-ae6b746da677)
 
-- 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a4f7688c-60cc-40b5-8a5d-766edea973ab)
+ 
+# Task 3: Use Network Watcher to test the connection between virtual machines
+
+-In this task, you verify that resources in peered virtual networks can communicate with each other. Network Watcher will be used to test the connection. Before continuing, ensure both virtual machines have been deployed and are running.
+
+1. From the Azure portal, search for and select Network Watcher.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/547f66bd-5e1a-4f66-b746-e0e6c29ce64d)
+
+2. From Network Watcher, in the Network diagnostic tools menu, select Connection Troubleshoot.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1704cbe2-5897-41e1-90e3-4dbeff38620b)
+
+3. Use the following information to complete the fields on the Connection troubleshooting page.
+
+- Field	Value
+
+Source type	Virtual machine
+Virtual machine	CoreServicesVM
+Destination-type	Virtual machine
+Virtual machine	ManufacturingVM
+Preferred IP Version	Both
+Protocol	TCP
+Destination port	3389
+Source port	Blank
+Diagnostic tests Default
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/759d3bdf-ec3b-47b7-9dbb-88bcd46b5ca3)
+
+4. Select Run diagnostic tests.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3204dc31-ac12-426c-963a-daae5537b28f)
+
+
+6. 
