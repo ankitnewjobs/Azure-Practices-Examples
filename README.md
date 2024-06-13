@@ -16,3 +16,7 @@ In this repository,  You will get an Idea about Different Practical Implementati
 - Example: 05 - **Implement Virtual Networking**
 
 - Example: 06 - **Manage Azure resources by using Azure Resource Manager Templates**
+
+- Example: 07 - **Implement Traffic Management**
+
+- Example: 08 - **Implement Intersite Connectivity**
