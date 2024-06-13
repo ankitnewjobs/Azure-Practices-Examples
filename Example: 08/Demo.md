@@ -221,3 +221,24 @@ Diagnostic tests Default
   
 3. Switch to the ManufacturingVnet and verify the ManufacturingVnet-to-CoreServicesVnet peering is listed. Ensure the Peering status is Connected. You may need to Refresh the page.
 
+# Task 5: Use Azure PowerShell to test the connection between virtual machines
+
+- In this task, you retest the connection between the virtual machines in different virtual networks.
+
+- **Verify the private IP address of the CoreServicesVM**
+- 
+1. From the Azure portal, search for and select the CoreServicesVM virtual machine.
+
+2. On the Overview blade, in the Networking section, record the Private IP address of the machine. You need this information to test the connection.
+
+**Test the connection to the CoreServicesVM from the ManufacturingVM.**
+
+1. Switch to the ManufacturingVM virtual machine.
+
+2. In the Operations blade, select the Run command blade.
+
+3. Select RunPowerShellScript and run the Test-NetConnection command. Be sure to use the private IP address of the CoreServicesVM.
+
+4. It may take a couple of minutes for the script to time out. The top of the page shows an informational message Script execution in progress.
+
+5. The test connection should succeed because peering has been configured. Your computer name and remote address in this graphic may be different.
