@@ -85,7 +85,49 @@ Subnet address range	10.0.0.0/24
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/bcfe03dd-3ca6-40a4-a817-06874081363c)
 
+# Task 2: Create a virtual machine in a different virtual network
 
+- In this task, you create a manufacturing services virtual network with a virtual machine.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/45baab44-5fee-45e1-b19f-233fd3683486)
+
+1. From the Azure portal, search for and navigate to Virtual Machines.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/849cd0a1-ec3f-4552-b2dd-ef8366e13b2d)
+
+2. Select Create from the virtual machines page then select Azure Virtual Machine.
+
+3. On the Basics tab, use the following information to complete the form, and then select Next: Disks >. For any setting not specified, leave the default value.
+
+- Setting	Value
+
+Subscription	your subscription
+Resource group	az104-rg5
+Virtual machine name	ManufacturingVM
+Region	(US) East US
+Security type	Standard
+Availability options	No infrastructure redundancy is required
+Image	Windows Server 2019 Datacenter: x64 Gen2
+Size	Standard_DS2_v3
+Username	ankit
+Password	Provide a complex password
+Public inbound ports	None
+
+4. On the Disks tab take the defaults and then select Next: Networking >.
+
+5. On the Networking tab, for Virtual network, select Create new.
+
+6. Use the following information to configure the virtual network, and then select Ok. If necessary, remove or replace the existing address range.
+
+Setting	Value
+Name	ManufacturingVnet
+Address Range	172.16.0.0/16
+Subnet Name	Manufacturing
+Subnet address range	172.16.0.0/24
+
+7. Select the Monitoring tab. For Boot Diagnostics, select Disable.
+
+8. Select Review + Create, and then select Create
 
 
 - 
