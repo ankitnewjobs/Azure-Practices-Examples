@@ -49,8 +49,43 @@ Task 6: Create a custom route.
 - Security type	Standard
 - Image	Windows Server 2019 Datacenter: x64 Gen2 (notice your other choices)
 - Size	Standard_DS2_v3
+- Username	ankit
+- Password	Provide a complex password
+- Public inbound ports	None
 - Username	local admin
 - Password	Provide a complex password
 - Public inbound ports	None
+
+  ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6786a924-eaa1-4ee7-b826-5adc7e4af273)
+
+5. On the Disks tab take the defaults and then select Next: Networking >.
+
+6. On the Networking tab, for Virtual network, select Create new.
+
+7. Use the following information to configure the virtual network, and then select Ok. If necessary, remove or replace the existing information.
+
+- Setting	Value
+
+Name	CoreServicesVnet (Create new)
+Address Range	10.0.0.0/16
+Subnet Name	Core
+Subnet address range	10.0.0.0/24
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/44fd3e1c-8aed-4388-b347-f57adf59469f)
+
+8. Select the Monitoring tab. For Boot Diagnostics, select Disable.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/bd75fac8-ec76-499b-8fdb-b3b898a40410)
+
+9. Select Review + Create, and then select Create.
+
+10. You do not need to wait for the resources to be created. Continue to the next task.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6b334aaa-6b03-4337-8fbf-d522a8feddb6)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/bcfe03dd-3ca6-40a4-a817-06874081363c)
+
+
+
 
 - 
