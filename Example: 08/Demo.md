@@ -226,8 +226,10 @@ Diagnostic tests Default
 - In this task, you retest the connection between the virtual machines in different virtual networks.
 
 - **Verify the private IP address of the CoreServicesVM**
-- 
+  
 1. From the Azure portal, search for and select the CoreServicesVM virtual machine.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/962fd96c-a8e0-4903-b0d0-f480f8f7de61)
 
 2. On the Overview blade, in the Networking section, record the Private IP address of the machine. You need this information to test the connection.
 
@@ -235,10 +237,16 @@ Diagnostic tests Default
 
 1. Switch to the ManufacturingVM virtual machine.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/b3c84e06-ce16-41f8-94b4-9db51556cda4)
+
 2. In the Operations blade, select the Run command blade.
 
 3. Select RunPowerShellScript and run the Test-NetConnection command. Be sure to use the private IP address of the CoreServicesVM.
 
+ **Test-NetConnection <CoreServicesVM private IP address> -port 3389**
+ 
 4. It may take a couple of minutes for the script to time out. The top of the page shows an informational message Script execution in progress.
 
 5. The test connection should succeed because peering has been configured. Your computer name and remote address in this graphic may be different.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/536b1040-08b2-4cff-9d2e-3cfcd195427d)
