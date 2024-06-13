@@ -171,4 +171,53 @@ Diagnostic tests Default
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3204dc31-ac12-426c-963a-daae5537b28f)
 
 
-6. 
+# Task 4: Configure virtual network peerings between virtual networks
+
+- In this task, you create a virtual network peering to enable communications between resources in the virtual networks.
+
+1. In the Azure portal, select the CoreServicesVnet virtual network.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f2881fb4-48d7-4273-99f8-e6feb60ffd4b)
+
+2. In CoreServicesVnet, under Settings, select Peerings.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/53eae71f-2195-4625-974e-cfdaa1ef2aa1)
+
+- On CoreServicesVnet	Peerings, select + Add.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/da69a331-ccf5-44a9-80ab-eb40fcb9e1cb)
+
+4. Use the information in the following table to create the peering.
+
+**Parameter	Value**
+
+**This virtual network**	 
+
+- Peering link name	CoreServicesVnet-to-ManufacturingVnet
+- Allow CoreServicesVnet to access the peered virtual network	selected (default)
+- Allow CoreServicesVnet to receive forwarded traffic from the peered virtual network	selected
+- Allow gateway in CoreServicesVnet to forward traffic to the peered virtual network	Not selected (default)
+- Enable CoreServicesVnt to use the peered virtual networks’ remote gateway	Not selected (default)
+
+  **Remote virtual network**	 
+
+- Peering link name	ManufacturingVnet-to-CoreServicesVnet
+- Virtual network deployment model	Resource manager
+- I know my resource ID	Not selected
+- Subscription	your subscription
+- Virtual network	ManufacturingVnet
+- Allow ManufacturingVnet to access CoreServicesVnet	selected (default)
+- Allow ManufacturingVnet to receive forwarded traffic from CoreServicesVnet	selected
+- Allow gateway in CoreServicesVnet to forward traffic to the peered virtual network	Not selected (default)
+- Enable ManufacturingVnet to use CoreServicesVnet’s remote gateway	Not selected (default)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/405ce6f9-2bfd-49f8-ab28-82f650c4876c)
+
+1. Review your settings and select Add.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8c77f2bd-9e4f-413f-9174-ab6b94cc8c60)
+
+2. In CoreServicesVnet	Peerings, verify that the CoreServicesVnet-to-ManufacturingVnet peering is listed. Refresh the page to ensure the Peering status is Connected.
+  
+3. Switch to the ManufacturingVnet and verify the ManufacturingVnet-to-CoreServicesVnet peering is listed. Ensure the Peering status is Connected. You may need to Refresh the page.
+
