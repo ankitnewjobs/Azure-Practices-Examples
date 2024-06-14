@@ -217,9 +217,13 @@
 
 1. In the Azure portal, search and select Virtual networks.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1076d820-6eb9-4eb0-9a0c-7b6d7e198913)
+
 2. On the Virtual networks blade, in the list of virtual networks, click az104-06-vnet1.
 
 3. On the az104-06-vnet1 virtual network blade, in the Settings section, click Subnets, and then click + Subnet.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4545dec8-718c-4936-9256-9024ff79b328)
 
 4. Add a subnet with the following settings (leave others with their default values).
 
@@ -231,7 +235,11 @@
 
 - Click Save
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/11762ebc-327e-4673-b3fb-7e9f54449d9e)
+
 6. In the Azure portal, search and select Application Gateways, and, on the Application Gateways blade, click + Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/04f20ba3-06af-4e1b-856a-0ab5bf5e9352)
 
 7. On the Basics tab, specify the following settings (leave others with their default values):
 
@@ -259,6 +267,8 @@
 
 - Subnet	subnet-appgw (10.60.3.224/27)
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a2abf39e-d9fc-4d7e-8ab6-39d676453ce9)
+
 8. Click Next: Frontends > and specify the following settings (leave others with their default values). When complete, click OK.
 
 **- Setting	Value**
@@ -271,6 +281,8 @@
 
 - Availability zone	None
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4857aaa9-2751-4c7c-9fe4-e5f5a5fb562e)
+
 9. Click Next: Backends > and then Add a backend pool. Specify the following settings (leave others with their default values). When completed click Add.
 
 **- Setting	Value**
@@ -282,6 +294,8 @@
 - Virtual machine	az104-rg6-nic1 (10.60.1.4)
 
 - Virtual machine	az104-rg6-nic2 (10.60.2.4)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/68682c6c-033b-4cd2-ad0c-70342625c2c7)
 
 10. Click Add a backend pool. This is the backend pool for images. Specify the following settings (leave others with their default values). When completed click Add.
 
@@ -301,6 +315,10 @@
 
 - Virtual machine	az104-rg6-nic2 (10.60.2.4)
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e100b063-4870-4c57-9845-0919e09f8f7b)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2fc11b31-674d-42cd-ba99-088742f8bdf4)
+
 12. Select Next: Configuration > and then Add a routing rule. Complete the information.
 
 **- Setting	Value**
@@ -319,6 +337,8 @@
 
 - Listener type	Basic
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/04a3b7a6-3204-4737-ad2a-476737dcacda)
+
 13. Move to the Backend targets tab. Select Add after completing the basic information.
 
 **- Setting	Value**
@@ -326,6 +346,10 @@
 - Backend target	az104-appgwbe
 
 - Backend settings	az104-http (create new)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9c15ddd2-b849-4529-a4c0-54661ca7f000)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6f9165ba-b619-44e9-bcdc-3f9de92d81ca)
 
 14. In the Path-based routing section, select Add multiple targets to create a path-based rule. You will create two rules. Click Add after the first rule and then Add after the second rule.
 
@@ -356,6 +380,10 @@
 15. Be sure to Save and check your changes, then select Next: Tags >. No changes are needed.
 
 16. Select Next: Review + create > and then click Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/003ad287-7989-4243-a041-73c2ea159d5f)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4a6b2f10-6b02-4cbc-8b3a-f0337965094a)
 
 17. After the application gateway deploys, search for and select az104-appgw.
 
