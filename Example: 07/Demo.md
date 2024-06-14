@@ -40,7 +40,7 @@
 
 10. Use the following information to complete the fields on the custom deployment page, leaving all other fields with the default value.
 
-- Setting	Value
+**- Setting	Value**
 
 - Subscription	your Azure subscription
 
@@ -62,19 +62,19 @@
 
 2. Create a load balancer with the following settings (leave others with their default values) then click Next: Frontend IP configuration:
 
-- Setting	Value
+**- Setting	Value**
 
 - Subscription	your Azure subscription
 - Resource group	az104-rg6
 - Name	az104-lb
-- Region	The same region which you deployed the VMs
+- Region	The same region in which you deployed the VMs
 - SKU	Standard
 - Type	Public
 - Tier	Regional
 
 3. On the Frontend IP configuration tab, click Add a frontend IP configuration and use the following settings:
 
-- Setting	Value
+**- Setting	Value**
 
 - Name	az104-fe
 - IP type	IP address
@@ -83,7 +83,7 @@
 
 4. On the Add a Public IP address popup, use the following settings before clicking OK and then Add. When completed click Next: Backend pools.
 
-- Setting	Value
+**- Setting	Value**
 
 - Name	az104-lbpip
 - SKU	Standard
@@ -91,15 +91,20 @@
 - Assignment	Static
 - Routing Preference	Microsoft network
 
-5. On the Backend pools tab, click Add a Backend Pool with the following settings (leave others with their default values). Click + Add (twice) and then click Next: Inbound rules.
+5. On the Backend Pools tab, click Add a Backend Pool with the following settings (leave others with their default values). Click + Add (twice) and then click Next: Inbound rules.
 
-- Setting	Value
+**- Setting	Value**
 
 - Name	az104-be
+  
 - Virtual network	az104-06-vnet1
+  
 - Backend Pool Configuration	NIC
+
 - Click Add to add a virtual machine	 
+
 - az104-06-vm0	check the box
+
 - az104-06-vm1	check the box
 
 6. As you have time, review the other tabs, then click Review + Create. Ensure there are no validation errors, then click Create.
@@ -112,25 +117,42 @@
 
 2. Select + Add. Add a load balancing rule with the following settings (leave others with their default values). As you configure the rule use the informational icons to learn about each setting. When finished click Save.
 
-- Setting	Value
+**- Setting	Value**
 
 - Name	az104-lbrule
+
 - IP Version	IPv4
+
 - Frontend IP Address	az104-fe
+
 - Backend pool	az104-be
+
 - Protocol	TCP
+
 - Port	80
+
 - Backend port	80
+
 - Health probe	Create new
+
 - Name	az104-hp
+
 - Protocol	TCP
+
 - Port	80
+
 - Interval	5
+
 - Close the Create health probe window	Save
+
 - Session persistence	None
+
 - Idle timeout (minutes)	4
+
 - TCP reset	Disabled
+
 - Floating IP	Disabled
+
 - Outbound source network address translation (SNAT)	Recommended
 
 3. Select Frontend IP configuration from the Load Balancer page. Copy the public IP address.
@@ -155,99 +177,135 @@
 
 4. Add a subnet with the following settings (leave others with their default values).
 
-- Setting	Value
+**- Setting	Value**
 
 - Name	subnet-appgw
+
 - Subnet address range	10.60.3.224/27
+
 - Click Save
 
 6. In the Azure portal, search and select Application Gateways, and, on the Application Gateways blade, click + Create.
 
 7. On the Basics tab, specify the following settings (leave others with their default values):
 
-- Setting	Value
+**- Setting	Value**
 
 - Subscription	your Azure subscription
+
 - Resource group	az104-rg6
+
 - Application gateway name	az104-appgw
+
 - Region	The same Azure region that you used in Task 1
+
 - Tier	Standard V2
+
 - Enable autoscaling	No
+
 - Minimum instance count	2
+
 - Availability zone	Zone 1
+
 - HTTP2	Disabled
+
 - Virtual network	az104-06-vnet1
+
 - Subnet	subnet-appgw (10.60.3.224/27)
 
 8. Click Next: Frontends > and specify the following settings (leave others with their default values). When complete, click OK.
 
-- Setting	Value
+**- Setting	Value**
 
 - Frontend IP address type	Public
+
 - Public IP address	Add new
+
 - Name	az104-gwpip
+
 - Availability zone	None
 
-9. Click Next : Backends > and then Add a backend pool. Specify the following settings (leave others with their default values). When completed click Add.
+9. Click Next: Backends > and then Add a backend pool. Specify the following settings (leave others with their default values). When completed click Add.
 
-- Setting	Value
-Name	az104-appgwbe
-Add backend pool without targets	No
-Virtual machine	az104-rg6-nic1 (10.60.1.4)
-Virtual machine	az104-rg6-nic2 (10.60.2.4)
+**- Setting	Value**
+
+- Name	az104-appgwbe
+
+- Add backend pool without targets	No
+
+- Virtual machine	az104-rg6-nic1 (10.60.1.4)
+
+- Virtual machine	az104-rg6-nic2 (10.60.2.4)
 
 10. Click Add a backend pool. This is the backend pool for images. Specify the following settings (leave others with their default values). When completed click Add.
 
-- Setting	Value
-Name	az104-imagebe
-Add backend pool without targets	No
-Virtual machine	az104-rg6-nic1 (10.60.1.4)
+**- Setting	Value**
+- Name	az104-imagebe
+-
+-  Add backend pool without targets	No
+
+- Virtual machine	az104-rg6-nic1 (10.60.1.4)
 
 11. Click Add a backend pool. This is the backend pool for video. Specify the following settings (leave others with their default values). When completed click Add.
 
-- Setting	Value
-Name	az104-videobe
-Add backend pool without targets	No
-Virtual machine	az104-rg6-nic2 (10.60.2.4)
+**- Setting	Value**
+- Name	az104-videobe
+
+- Add backend pool without targets	No
+
+- Virtual machine	az104-rg6-nic2 (10.60.2.4)
 
 12. Select Next: Configuration > and then Add a routing rule. Complete the information.
 
-- Setting	Value
+**- Setting	Value**
 
-Rule name	az104-gwrule
-Priority	10
-Listener name	az104-listener
-Frontend IP	Public IPv4
-Protocol	HTTP
-Port	80
-Listener type	Basic
+- Rule name	az104-gwrule
+
+- Priority	10
+
+- Listener name	az104-listener
+
+- Frontend IP	Public IPv4
+
+- Protocol	HTTP
+
+- Port	80
+
+- Listener type	Basic
 
 13. Move to the Backend targets tab. Select Add after completing the basic information.
 
-- Setting	Value
+**- Setting	Value**
 
-Backend target	az104-appgwbe
-Backend settings	az104-http (create new)
+- Backend target	az104-appgwbe
+
+- Backend settings	az104-http (create new)
 
 14. In the Path-based routing section, select Add multiple targets to create a path-based rule. You will create two rules. Click Add after the first rule and then Add after the second rule.
 
 **Rule - routing to the image backend**
 
-- Setting	Value
+**- Setting	Value**
 
-Path	/image/*
-Target name	images
-Backend settings	az104-http
-Backend target	az104-imagebe
+- Path	/image/*
+
+- Target name	images
+
+- Backend settings	az104-http
+
+- Backend target	az104-imagebe
 
 **Rule - routing to the video backend**
 
-- Setting	Value
+**- Setting	Value**
 
-Path	/video/*
-Target name	videos
-Backend settings	az104-http
-Backend target	az104-videobe
+- Path	/video/*
+
+- Target name	videos
+
+- Backend settings	az104-http
+
+- Backend target	az104-videobe
 
 15. Be sure to Save and check your changes, then select Next: Tags >. No changes are needed.
 
