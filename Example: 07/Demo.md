@@ -82,17 +82,21 @@
 
 1. In the Azure portal, search for and select Load balancers and, on the Load balancers blade, click + Create.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9ea1b2d8-2003-4310-818b-9a8738936dbe)
+
 2. Create a load balancer with the following settings (leave others with their default values) then click Next: Frontend IP configuration:
 
 **- Setting	Value**
 
 - Subscription	your Azure subscription
-- Resource group	az104-rg6
+- Resource group	az104-rg7
 - Name	az104-lb
 - Region	The same region in which you deployed the VMs
 - SKU	Standard
 - Type	Public
 - Tier	Regional
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e65cbb46-2acc-4c25-972a-753c67cc91b5)
 
 3. On the Frontend IP configuration tab, click Add a frontend IP configuration and use the following settings:
 
@@ -103,6 +107,8 @@
 - Gateway Load Balancer	None
 - Public IP address	Select Create new (use the instructions in the next step)
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/988750b4-4f33-4bdf-a554-0e304581fd5b)
+
 4. On the Add a Public IP address popup, use the following settings before clicking OK and then Add. When completed click Next: Backend pools.
 
 **- Setting	Value**
@@ -112,6 +118,8 @@
 - Tier	Regional
 - Assignment	Static
 - Routing Preference	Microsoft network
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/925ac913-4a23-4f0e-96f8-6a05216a8adc)
 
 5. On the Backend Pools tab, click Add a Backend Pool with the following settings (leave others with their default values). Click + Add (twice) and then click Next: Inbound rules.
 
@@ -128,6 +136,10 @@
 - az104-06-vm0	check the box
 
 - az104-06-vm1	check the box
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/06d5743d-39e3-41f0-a171-9e87f4898d56)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4f0161d5-dbda-4fda-bab4-c97fd89e048c)
 
 6. As you have time, review the other tabs, then click Review + Create. Ensure there are no validation errors, then click Create.
 
@@ -167,6 +179,8 @@
 
 - Close the Create health probe window	Save
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3e459d13-1e52-4c11-8f09-d17e087dc6db)
+
 - Session persistence	None
 
 - Idle timeout (minutes)	4
@@ -174,6 +188,8 @@
 - TCP reset	Disabled
 
 - Floating IP	Disabled
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8012fea7-1368-4828-9b70-716e2948b5c6)
 
 - Outbound source network address translation (SNAT)	Recommended
 
