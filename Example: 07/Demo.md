@@ -387,15 +387,27 @@
 
 17. After the application gateway deploys, search for and select az104-appgw.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/650d4807-1002-495e-9bd8-de626210600b)
+
 18. In the Application Gateway resource, in the Monitoring section, select Backend Health.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/5fcafcaf-b3cc-4ed3-9b4a-b2772f20af59)
 
 19. Ensure both servers in the backend pool display Healthy.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/90b6aa01-2fbd-4fea-b515-d557c5703877)
+
 20. On the Overview blade, copy the value of the Frontend public IP address.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/480b9562-7fd5-4158-8e73-ba8cdebbe35a)
 
 21. Start another browser window and test this URL - http://<frontend ip address>/image/.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/66538b4b-a275-4fc3-b285-661adf6abbc5)
+
 22. Verify you are directed to the image server (vm1).
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/524a8dac-755e-40b9-bf8c-0a8e1eaee35b)
 
 23. Start another browser window and test this URL - http://<frontend ip address>/video/.
 
