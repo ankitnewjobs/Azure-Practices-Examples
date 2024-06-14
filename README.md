@@ -36,6 +36,5 @@ Happy Learning!
 
 Project Maintainers & Contributors
 
-![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2d515794-80fd-4a2d-89e4-21eaf1e9e2cd)
-
-Anvesh Muppeda
+![1](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0eb590e7-50e0-49f0-9439-77537cde2b8b)
+Ankit Ranjan
