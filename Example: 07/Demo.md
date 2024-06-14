@@ -26,17 +26,33 @@
 
 3. Search for and select Deploy a custom template.
 
-4. On the custom deployment page, select Build your own template in the editor.
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8ee33d5a-0aa3-46cb-bc0b-fe526c780cec)
+
+4. On the custom deployment page, select Build your template in the editor.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/b00faea3-e4fe-45a2-8488-edac8abffc2d)
 
 5. On the edit template page, select Load file.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8c84fb25-7133-4bf9-8ad6-be728045d7e4)
+
 6. Locate and select the \Allfiles\Lab06\az104-06-vms-template.json file and select Open.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c3af3489-1714-4801-9d49-b0bdcc52fea0)
+
 7. Select Save.
-   
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4cb7d6d7-2035-4e71-80e3-ec1d839dc3d8)
+
 8. Select Edit parameters and load the \Allfiles\Lab06\az104-06-vms-parameters.json file.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d9326c3e-3321-4298-ae0d-50a176b3f534)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4d72f3e7-0f77-410e-9157-0f3ad304c79f)
+
 9. Select Save.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/14d83cbf-e52e-481a-b7c2-30618b67b96e)
 
 10. Use the following information to complete the fields on the custom deployment page, leaving all other fields with the default value.
 
@@ -44,11 +60,17 @@
 
 - Subscription	your Azure subscription
 
-- Resource group	az104-rg6 (If necessary, select Create new)
+- Resource group	az104-rg7 (If necessary, select Create new)
 
 - Password	Provide a secure password
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d9b59f70-4441-4b61-8ac5-5e653c5d5631)
+
 11. Select Review + Create and then select Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ffeaa2ad-1027-4e72-a40b-9edff89e0fab)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d402faa2-10ff-4531-a39c-227977cf5cfa)
 
 # Task 2: Configure an Azure Load Balancer
 
