@@ -189,11 +189,19 @@
 
 - Floating IP	Disabled
 
-![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8012fea7-1368-4828-9b70-716e2948b5c6)
-
 - Outbound source network address translation (SNAT)	Recommended
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8012fea7-1368-4828-9b70-716e2948b5c6)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e676dbec-ecb3-4677-b5e1-612da362cff2)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6000cbf4-036f-4ed4-9093-cb57a0391c6a)
+
 3. Select Frontend IP configuration from the Load Balancer page. Copy the public IP address.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/91689e2c-178b-4d33-9222-a23c1bd6396d)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/92e8fb3a-ae39-4672-be06-7a7ef8d2a2e2)
 
 4. Open another browser tab and navigate to the IP address. Verify that the browser window displays the message Hello World from az104-06-vm0 or Hello World from az104-06-vm1.
 
