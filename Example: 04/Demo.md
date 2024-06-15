@@ -237,3 +237,53 @@ Task 4: Configure and test resource locks.
 14. On the Tags blade, note that the tag Cost Center with the value 000 has been automatically assigned to the resource.
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/fc0a76b1-ffc0-4132-ac51-4a47e9752cb9)
+
+**Did you know? If you search for and select Tags in the portal, you can view the resources with a specific tag.**
+
+# Task 4: Configure and test resource locks
+
+- In this task, you configure and test a resource lock. Locks prevent either deletions or modifications of a resource.
+
+1. Search for and select your resource group.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/7f845a51-c608-421d-aec5-792a08b81d21)
+
+2. In the Settings blade, select Locks.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/59c453b1-01e2-49f9-beea-3e6e8887c5db)
+
+3. Select Add and complete the resource lock information. When finished select Ok.
+
+- Setting	Value
+
+- Lock name	rg-lock
+
+- Lock type	delete (notice the selection for read-only)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9df654e0-82f9-4882-8daf-ac7d6f2d695a)
+
+4. Navigate to the resource group Overview blade, and select Delete resource group.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/57805a46-3974-42f7-9e90-f110a12515f0)
+
+5. In the Enter resource group name to confirm deletion textbox provide the resource group name, az104-rg2. Notice you can copy and paste the resource group name.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/48b1b586-4f35-4ea2-a681-d0a7b304ad47)
+
+6. Notice the warning: Deleting this resource group and its dependent resources is a permanent action and cannot be undone. Select Delete.
+
+7. You should receive a notification denying the deletion.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/69644313-57df-4ef6-ab38-afa10e6fdd4e)
+
+**Note: You will need to remove the lock if you intend to delete the resource group.**
+
+# Cleanup your resources
+
+- If you are working with your subscription take a minute to delete the lab resources. This will ensure resources are freed up and cost is minimized. The easiest way to delete the lab resources is to delete the lab resource group.
+
+- In the Azure portal, select the resource group, select Delete the resource group, Enter the resource group name, and then click Delete.
+
+- Using Azure PowerShell, Remove-AzResourceGroup -Name resourceGroupName.
+
+- Using the CLI, az group delete --name resourceGroupName.
