@@ -150,3 +150,90 @@ Task 4: Configure and test resource locks.
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1931cc8d-9366-464c-a654-754356b4b288)
 
+# Task 3: Apply tagging via an Azure policy
+
+- In this task, we will use the new policy definition to remediate any non-compliant resources. In this scenario, we will make any child resources of a resource group inherit the Cost Center tag that was defined on the resource group.
+
+1. In the Azure portal, search for and select Policy.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9de8db95-8036-445c-9586-3bcb95f03126)
+
+2. In the Authoring section, click Assignments.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6dca8623-3562-4a41-bc7e-d058dcae7228)
+
+3 In the list of assignments, click the ellipsis icon in the row representing the Require Cost Center tag with Default value policy assignment and use the Delete assignment menu item to delete the assignment.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/afd62c26-640e-4766-815e-2a01734688f4)
+
+4. Click Assign policy and specify the Scope by clicking the ellipsis button and selecting the following values:
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e1b9def6-9094-4411-af62-65824c2115f7)
+
+- Setting	Value
+
+- Subscription	your Azure subscription
+
+- Resource Group	az104-rg2
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f6e4b5a9-cf1e-4afe-889a-c35069b64c72)
+
+5. To specify the Policy definition, click the ellipsis button and then search for and select Inherit a tag from the resource group if missing.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/67a5a3fb-1295-4e91-a000-dcfed5cdf9eb)
+
+6. Select Add and then configure the remaining Basics properties of the assignment.
+
+- Setting	Value
+
+- Assignment name	Inherit the Cost Center tag and its value 000 from the resource group if missing
+
+- Description	Inherit the Cost Center tag and its value 000 from the resource group if missing
+
+- Policy enforcement	Enabled
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/68b323a2-1adf-4104-b326-02e1244b7122)
+
+7. Click Next twice and set Parameters to the following values:
+
+- Setting	Value
+
+- Tag Name	Cost Center
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4e0e7d9d-5b0a-4a45-9d97-a007341b2d9a)
+
+8. Click Next and, on the Remediation tab, configure the following settings (leave others with their defaults):
+
+- Setting	Value
+
+- Create a remediation task	enabled
+
+- Policy to remediate	Inherit a tag from the resource group if missing
+
+9. Click Review + Create and then click Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/dbaf5b38-d993-4cbe-81ed-795a81f3a58b)
+
+10. Search for and select Storage Account, and click + Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/b73aea76-f594-481d-8630-dbdd39707ff4)
+
+11. On the Basics tab of the Create storage account blade, verify that you are using the Resource Group that the Policy was applied to and specify the following settings (leave others with their defaults) and click Review:
+
+- Setting	Value
+
+- Storage account name	any globally unique combination of between 3 and 24 lowercase letters and digits, starting with a letter
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c2286111-beae-4db6-b49c-e2b73c52f8c0)
+
+12. Verify that this time the validation passed and click Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/adb4cd6a-7144-4fff-ab9e-1b3de631c2ea)
+
+13. Once the new storage account is provisioned, click Go to the resource.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3939d981-2923-4b89-bab4-cbd4b70b1b6b)
+
+14. On the Tags blade, note that the tag Cost Center with the value 000 has been automatically assigned to the resource.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/fc0a76b1-ffc0-4132-ac51-4a47e9752cb9)
