@@ -160,6 +160,38 @@
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8cd9a6ed-81cd-4294-bf64-39084d71b0cf)
 
-5. On the Overview blade of the Web App select the Default domain link to display the website home page.
+5. Verify the production web page displays the Hello World! page.
 
-6. Verify the production web page displays the Hello World! page.
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4486a06d-eb80-4b38-9f53-56029dabb026)
+
+# Task 5: Configure and test autoscaling of the Azure Web App
+
+- In this task, you will configure the autoscaling of Azure Web App. Autoscaling enables you to maintain optimal performance for your web app when traffic to the web app increases. To determine when the app should scale you can monitor metrics like CPU usage, memory, or bandwidth.
+
+1. In the Settings section, select Scale out (App Service plan).
+
+2. From the Scaling section, select Automatic. Notice the Rules Based option. Rules based scaling can be configured for different app metrics.
+
+3. In the Maximum burst field, select 2.
+
+4. Select Save.
+
+5. Select Diagnose and solve problems (left pane).
+
+6. In the Load Test your App box, select Create Load Test.
+
+- Select + Create and give your load test a name. The name must be unique.
+
+- Select Review + create and then Create.
+ 
+7. Wait for the load test to create, and then select Go to resource.
+
+8. From the Overview	Add HTTP requests, select Create.
+
+9. For the Test URL, paste in your Default domain URL. Ensure this is properly formatted and begins with https://.
+
+10. Select Review + create and Create.
+
+11. Review the test results including Virtual users, Response time, and Requests/sec.
+
+12. Select Stop to complete the test run.
