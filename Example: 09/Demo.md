@@ -104,4 +104,24 @@
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ae75db00-968b-4103-b44d-9c5f4e095e60)
 
+# Task 3: Configure Web App deployment settings
+
+- In this task, you will configure Web App deployment settings. Deployment settings allow for continuous deployment. This ensures that the app service has the latest version of the application.
+
+1. In the staging slot, select Deployment Center and then select Settings.
+
+2. In the Source drop-down list, select External Git. Notice the other choices.
+
+3. In the repository field, enter https://github.com/Azure-Samples/php-docs-hello-world
+
+4. In the branch field, enter master.
+
+5. Select Save.
+
+6. From the staging slot, select Overview.
+
+7. Select the Default domain link, and open the URL in a new tab.
+
+8. Verify that the staging slot displays Hello World.
+
 
