@@ -70,4 +70,26 @@
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a6b5dd02-40f8-424a-82ed-de7c7ea9a029)
 
+# Task 2: Create and configure a deployment slot
+
+- In this task, you will create a staging deployment slot. Deployment slots enable you to perform testing before making your app available to the public (or your end users). After you have performed testing, you can swap the slot from development or staging to production. Many organizations use slots to perform pre-production testing. Additionally, many organizations run multiple slots for every application (for example, development, QA, test, and production).
+
+1. On the blade of the newly deployed Web App, click the Default Domain link to display the default web page in a new browser tab.
+
+2. Close the new browser tab and, back in the Azure portal, in the Deployment section of the Web App blade, click Deployment slots.
+
+3. Click Add slot, and add a new slot with the following settings:
+
+- Setting	Value
+
+- Name	staging
+
+- Clone settings from	Do not clone settings
+
+4. Select Add.
+
+5. Back on the Deployment slots blade of the Web App, click the entry representing the newly created staging slot.
+
+6. Review the staging slot blade and note that its URL differs from the one assigned to the production slot.
+
 
