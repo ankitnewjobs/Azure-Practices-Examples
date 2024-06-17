@@ -76,7 +76,11 @@
 
 1. On the blade of the newly deployed Web App, click the Default Domain link to display the default web page in a new browser tab.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/fb658b99-2198-4ea0-a269-1261dec7b490)
+
 2. Close the new browser tab and, back in the Azure portal, in the Deployment section of the Web App blade, click Deployment slots.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/199d111e-1abd-4f97-8a14-d51660b837bc)
 
 3. Click Add slot, and add a new slot with the following settings:
 
@@ -86,10 +90,18 @@
 
 - Clone settings from	Do not clone settings
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e36caf82-ab11-465c-a6b3-a7ccad739dcc)
+
 4. Select Add.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6f71a111-941d-4bc6-a6dd-0d9fe6039363)
 
 5. Back on the Deployment slots blade of the Web App, click the entry representing the newly created staging slot.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/aac19cf0-bb52-401a-9798-8f01c7104ab7)
+
 6. Review the staging slot blade and note that its URL differs from the one assigned to the production slot.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ae75db00-968b-4103-b44d-9c5f4e095e60)
 
 
