@@ -144,8 +144,22 @@
 
 1. Navigate back to the Deployment slots blade, and then select Swap.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3f4424a0-1458-4004-8041-a96e915acd73)
+
 2. Review the default settings and click Swap.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3e37d219-48d2-412c-a9b1-6214017ab73b)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8cd9a6ed-81cd-4294-bf64-39084d71b0cf)
 
 3. On the Overview blade of the Web App select the Default domain link to display the website home page.
 
-4. Verify the production web page displays the Hello World! page.
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/fe732688-10c5-4617-a713-67bef693febb)
+
+4. Review the default settings and click Swap.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8cd9a6ed-81cd-4294-bf64-39084d71b0cf)
+
+5. On the Overview blade of the Web App select the Default domain link to display the website home page.
+
+6. Verify the production web page displays the Hello World! page.
