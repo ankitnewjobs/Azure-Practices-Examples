@@ -28,9 +28,15 @@
 
 1. Sign in to the Azure portal - https://portal.azure.com.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3984393f-fe82-458a-92aa-8a544f5c8c05)
+
 2. Search for and select App services.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0dea2f51-ea5c-459b-aacb-97df06b5a8c2)
+
 3. Select + Create, from the drop-down menu, Web App. Notice the other choices.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/b48ee555-cb24-452b-afd8-90f1aa58c97d)
 
 4. On the Basics tab of the Create Web App blade, specify the following settings (leave others with their default values):
 
@@ -54,6 +60,14 @@
 
 - Zone redundancy	accepts the defaults
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/b58aca81-c8ae-4bef-962b-43e926dff9af)
+
 5. Click Review + Create, and then Create.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9ad92765-4527-4535-acde-baa5ff089a6b)
+
 6. After the deployment, select Go to resource.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a6b5dd02-40f8-424a-82ed-de7c7ea9a029)
+
+
