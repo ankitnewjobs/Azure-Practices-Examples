@@ -54,6 +54,6 @@
 
 - Zone redundancy	accepts the defaults
 
-- Click Review + Create, and then Create.
+5. Click Review + Create, and then Create.
 
 6. After the deployment, select Go to resource.
