@@ -168,27 +168,47 @@
 
 - In this task, you will configure the autoscaling of Azure Web App. Autoscaling enables you to maintain optimal performance for your web app when traffic to the web app increases. To determine when the app should scale you can monitor metrics like CPU usage, memory, or bandwidth.
 
-1. In the Settings section, select Scale out (App Service plan).
+1. In the Settings section, select Scale-out (App Service plan).
 
-2. From the Scaling section, select Automatic. Notice the Rules Based option. Rules based scaling can be configured for different app metrics.
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a10d2b94-572c-4aa4-ab9a-9a5fc60c2e80)
+
+2. From the Scaling section, select Automatic. Notice the Rules-based option. Rules-based scaling can be configured for different app metrics.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/afca06ca-c4d2-4b0d-9b88-8a73af346576)
 
 3. In the Maximum burst field, select 2.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/52a4d94e-8b33-4a85-986e-72a709942284)
+
 4. Select Save.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/927b887d-9e77-465b-9761-1bd777c17842)
 
 5. Select Diagnose and solve problems (left pane).
 
 6. In the Load Test your App box, select Create Load Test.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2abd51c0-1312-4c4f-ab4a-633dcddb9249)
+
 - Select + Create and give your load test a name. The name must be unique.
 
-- Select Review + create and then Create.
- 
-7. Wait for the load test to create, and then select Go to resource.
+- Select Review + Create and then Create.
+
+ ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/32bcc6d7-a500-4ec3-ad37-64b2838015d8)
+
+7. Wait for the load test to be created, and then select Go to the resource.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/975fe9f3-445c-4956-bb7a-dacf6b0d8483)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1f554291-c48c-4601-b618-fc9654209de1)
 
 8. From the Overview	Add HTTP requests, select Create.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a6c5f233-6eaa-4d8e-b312-cf17edbad91e)
+
 9. For the Test URL, paste in your Default domain URL. Ensure this is properly formatted and begins with https://.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9c4c5231-e339-40c7-85c1-012942a88cba)
 
 10. Select Review + create and Create.
 
