@@ -21,3 +21,39 @@
 - Task 4: Swap deployment slots.
 
 - Task 5: Configure and test autoscaling of the Azure web app.
+
+# Task 1: Create and configure an Azure web app
+
+- In this task, you create an Azure web app. Azure App Services is a Platform As a Service (PAAS) solution for web, mobile, and other web-based applications. Azure web apps are part of Azure App Services hosting most runtime environments, such as PHP, Java, and . NET. The app service plan that you select determines the web app's compute, storage, and features.
+
+1. Sign in to the Azure portal - https://portal.azure.com.
+
+2. Search for and select App services.
+
+3. Select + Create, from the drop-down menu, Web App. Notice the other choices.
+
+4. On the Basics tab of the Create Web App blade, specify the following settings (leave others with their default values):
+
+- Setting	Value
+
+- Subscription	your Azure subscription
+
+- Resource group	az104-rg9 
+
+- Web app name	any globally unique name
+
+- Publish	Code
+
+- Runtime stack	PHP 8.2
+
+- Operating system	Linux
+
+- Region	East US
+
+- Pricing plans	accept the defaults
+
+- Zone redundancy	accepts the defaults
+
+- Click Review + Create, and then Create.
+
+6. After the deployment, select Go to resource.
