@@ -110,18 +110,42 @@
 
 1. In the staging slot, select Deployment Center and then select Settings.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/64832158-3db1-483b-85ed-4abd1c436816)
+
 2. In the Source drop-down list, select External Git. Notice the other choices.
 
-3. In the repository field, enter https://github.com/Azure-Samples/php-docs-hello-world
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d2a193de-f819-4795-b542-cd885ea56b42)
 
-4. In the branch field, enter master.
+3. In the repository field, enter https://github.com/ankitnewjobs/Azure-Example-php-docs-hello-world
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e0e8f03f-02cf-439c-939f-20d6bdc2e845)
+
+4. In the branch field, enter master/main.
 
 5. Select Save.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e668cfb8-7679-4e71-a1d0-8069169edc9a)
+
 6. From the staging slot, select Overview.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9b9995df-854a-46f9-be9a-d6ee3c762dd2)
 
 7. Select the Default domain link, and open the URL in a new tab.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3d87e563-40c7-4dd2-9dd9-a9d9330462e0)
+
 8. Verify that the staging slot displays Hello World.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/243b4916-9a19-4d24-8684-c2af19f971a0)
 
+# Task 4: Swap deployment slots
+
+- In this task, you will swap the staging slot with the production slot. Swapping a slot allows you to use the code that you have tested in your staging slot, and move it to production. The Azure portal will also prompt you if you need to move other application settings that you have customized for the slot. Swapping slots is a common task for application teams and application support teams, especially those deploying routine app updates and bug fixes.
+
+1. Navigate back to the Deployment slots blade, and then select Swap.
+
+2. Review the default settings and click Swap.
+
+3. On the Overview blade of the Web App select the Default domain link to display the website home page.
+
+4. Verify the production web page displays the Hello World! page.
