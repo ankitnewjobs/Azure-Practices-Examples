@@ -3,9 +3,6 @@
 # Lab scenario
 Your organization is building a new lab environment for pre-production testing of apps and services. A few engineers are being hired to manage the lab environment, including the virtual machines. To allow the engineers to authenticate by using Microsoft Entra ID, you have been tasked with provisioning users and groups. To minimize administrative overhead, membership of the groups should be updated automatically based on job titles.
 
-![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c70f3c5a-b994-4e95-8166-17d2f5d31b50)
-
-
 # Job skills
 Task 1: Create and configure user accounts.
 
