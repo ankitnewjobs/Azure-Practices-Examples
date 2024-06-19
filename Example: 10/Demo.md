@@ -22,7 +22,11 @@
 
 1. Sign in to the Azure portal - https://portal.azure.com.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4e8b86c1-6852-4751-8ec7-5a8d13fef69c)
+
 2. In the Azure portal, search for and select Container instances and then, on the Container instances blade, click + Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c2e13222-6e16-4e59-b812-15ecf511284a)
 
 3. On the Basics tab of the Create container instance blade, specify the following settings (leave others with their default values):
 
@@ -40,13 +44,19 @@
 
 - Image	mcr.microsoft.com/azuredocs/aci-helloworld:latest (Linux)
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a1d422d3-f514-49e3-8052-3f381ac528fc)
+
 4. Click Next: Networking > and specify the following settings (leave others with their default values):
 
 - Setting	Value
 
 - DNS name label	any valid, globally unique DNS host name
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/61b67d08-4d7c-4927-b7a1-9839a06f0f09)
+
 4. Click Next: Advanced >, review the settings without making any changes.
 
 5. Click Review + Create, ensure that the validation passed and then select Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4e08a7ad-67e4-4349-99b3-4f3673456356)
 
