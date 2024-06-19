@@ -32,6 +32,8 @@ In this repository,  You will get an Idea about Different Practical Implementati
 
 - Example: 10 - **Implement Azure Container Instances**
 
+- Example: 11 - **Implement Azure Container Apps**
+
 # Contributing
 
 - Contributions to this repository are welcome! If you have any Azure DevOps-related examples, tutorials, or projects you'd like to share, feel free to submit a pull request.
