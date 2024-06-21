@@ -94,9 +94,9 @@
 
 - Public access level	Notice the access level is set to private
 
-4. On your container, scroll to the ellipsis (…) on the far right, select Access Policy.
+4. On your container, scroll to the ellipsis (…) on the far right, and select Access Policy.
 
-5. In the Immutable blob storage area, select Add policy.
+5. In the Immutable Blob storage area, select Add Policy.
 
 - Setting	Value
 
@@ -104,11 +104,11 @@
 
 - Set retention period for	180 days
 
-8. Select Save.
+6. Select Save.
 
 # Manage blob uploads
 
-1. Return to the containers page, select your data container and then click Upload.
+1. Return to the containers page, select your data container, and then click Upload.
 
 2. On the Upload blob blade, expand the Advanced section.
 
