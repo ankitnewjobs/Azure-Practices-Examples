@@ -301,7 +301,7 @@
 
 **- Setting	Value**
 - Name	az104-imagebe
--
+
 -  Add backend pool without targets	No
 
 - Virtual machine	az104-rg6-nic1 (10.60.1.4)
