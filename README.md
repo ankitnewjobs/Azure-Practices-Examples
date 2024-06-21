@@ -34,7 +34,7 @@ In this repository,  You will get an Idea about Different Practical Implementati
 
 - Example: 11 - **Implement Azure Container Apps**
 
-- Example: 12 - **Implement Traffic Management**
+- Example: 12 - **Manage Azure Storaget**
 
 # Contributing
 
