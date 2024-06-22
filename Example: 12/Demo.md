@@ -24,7 +24,11 @@
 
 1. Sign in to the Azure portal - https://portal.azure.com.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/003f76ab-7a4d-4507-abd4-22d3412931a2)
+
 2. Search for and select Storage accounts, and then click + Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c0bd04c5-52bc-4e0f-8565-a4c0bcd1153d)
 
 3. On the Basics tab of the Create a storage account blade, specify the following settings (leave others with their default values):
 
@@ -44,37 +48,69 @@
 
 - Make read access to data in the event of regional availability	Check the box
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d1d440da-36b5-4b07-ac8b-91ece4a82f39)
+
 1. On the Advanced tab, use the informational icons to learn more about the choices. Take the defaults.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0ce207a9-9a92-4e26-88ae-72e582fcbd00)
 
 2. On the Networking tab, review the available options, select Disable public access, and use private access.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/b1fc821c-5d53-44e9-8c09-8f7775d4c5df)
+
 3. Review the Data Protection tab. Notice that 7 days is the default soft delete retention policy. Note you can enable blob versioning. Accept the defaults.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0657a8d7-5cd4-4be6-99c1-a3f200613c68)
 
 4. Review the Encryption tab. Notice the additional security options. Accept the defaults.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/646d45a2-cac2-4094-ae03-1b2fdd2714e5)
+
 5. Select Review, wait for the validation process to complete, and then click Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/72aae666-cdb0-4959-a427-de4fcc258371)
 
 6. Once the storage account is deployed, select Go to the resource.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f2cee69b-95af-4a7a-aad8-9c7805df892a)
+
 7. Review the Overview blade and the additional configurations that can be changed. These are global settings for the storage account. Notice the storage account can be used for Blob containers, File shares, Queues, and Tables.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4fca4eed-29a0-42d3-ba52-5ab10a7886ae)
 
 8. In the Security + networking section, select Networking. Notice public network access is disabled.
 
 - Change the public access level to Enabled from selected virtual networks and IP addresses.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/21dad183-ec3d-4dba-b781-5c82c0811009)
+
 - In the Firewall section, check the box for Add your client IP address.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/96d7ba40-ad94-4c1a-99c6-8b94dc8466fb)
 
 - Be sure to Save your changes.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e508f45e-d6ef-4a7d-ba95-4a095045d792)
+
 9. In the Data management section, view the Redundancy blade. Notice the information about your primary and secondary data center locations.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6115b3c7-e4b8-4828-97e6-15757344e5d1)
 
 10. In the Data Management section, select Lifecycle Management, and then select Add a rule.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/076d4c7c-b37a-464f-87fe-71107ec4cd2b)
+
 - Name the rule Movetocool. Notice your options for limiting the scope of the rule.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e005e824-4041-4a6e-901e-ed843ea92d5a)
 
 - On the Base blobs tab, if based blobs were last modified more than 30 days ago then move to cool storage. Notice your other choices.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f522979f-b00f-44b1-8d7c-087e7936b747)
+
 - Notice you can configure other conditions. Select Add when you are done exploring.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f5e91737-63f9-4582-9dab-370615eca7d1)
 
 # Task 2: Create and configure secure blob storage
 
