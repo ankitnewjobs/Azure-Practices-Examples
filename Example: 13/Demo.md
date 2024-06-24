@@ -30,7 +30,11 @@
 
 1. Sign in to the Azure portal - https://portal.azure.com.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/19de69da-1e8e-4c6f-9b73-d2592176f970)
+
 2. Search for and select Virtual machines, on the Virtual machine's blade, click + Create, and then select in the drop-down Azure virtual machine. Notice your other choices.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/5862d73a-d00e-4f29-9371-c7316e0372ef)
 
 3. On the Basics tab, in the Availability zone drop-down menu, place a checkmark next to Zone 2. This should select both Zone 1 and Zone 2.
 
@@ -58,13 +62,16 @@
 
 - Size	Standard D2s v3
 
-- Username	local admin
+- Username	as per your choice
 
 - Password	Provide a secure password
 
 - Public inbound ports	None
 
 - Would you like to use an existing Windows Server license?	Unchecked
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c7e922a7-447e-4087-9469-1c200eae635b)
+
 
 5. Click Next: Disks >, specify the following settings (leave others with their default values):
 
@@ -76,6 +83,8 @@
 
 - Enable Ultra Disk compatibility	Unchecked
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/b5a36bd4-a25c-4254-92ce-cc73192d3f40)
+
 6. Click Next: Networking > Take the defaults but do not provide a load balancer.
 
 - Setting	Value
@@ -84,11 +93,15 @@
 
 - Load balancing options	None
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/5b5057d3-e57d-448a-b88d-2c4054ef6d52)
+
 7. Click Next: Management > and specify the following settings (leave others with their default values):
 
 - Setting	Value
 
 - Patch orchestration options	Azure orchestrated
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/bc870154-fecc-403a-9c29-c6ad8bbd45ac)
 
 8. Click Next: Monitoring > and specify the following settings (leave others with their default values):
 
@@ -96,9 +109,15 @@
 
 - Boot diagnostics	Disable
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/b0a87662-6ecf-4bea-83d3-e22888a52f76)
+
 9. Click Next: Advanced >, take the defaults, then click Review + Create.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/45308a75-4ac1-4c42-a0db-b5b20aa4b566)
+
 10. After the validation, click Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2e6396ad-ad65-4d87-b622-0f14e0c267b0)
 
 11. Wait for the deployment to complete, then select Go to resource.
 
