@@ -437,3 +437,53 @@
 # vmss1_0
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1f8e45a2-96d4-4a74-b0f6-3df4916bba4d)
 
+# Task 5: Create a virtual machine using Azure PowerShell (option 1)
+
+1. Use the icon (top right) to launch a Cloud Shell session. Alternately, navigate directly to **https://shell.azure.com.**
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f0cfccb8-1e2d-4839-8cc9-ce3ff0d2ee1f)
+
+2. Be sure to select PowerShell. If necessary, configure the shell storage.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/217fbc37-a615-4f2a-8b4c-34d4cb714913)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8b6d3d3a-9bd4-4dd0-bcad-c388aec1862d)
+
+3. Run the following command to create a virtual machine. When prompted, provide a username and password for the VM. While you wait check out the New-AzVM command reference for all the parameters associated with creating a virtual machine.
+
+  # Code
+  New-AzVm `
+ -ResourceGroupName 'az104-rg8' `
+ -Name 'myPSVM' `
+ -Location 'East US' `
+ -Image 'Win2019Datacenter' `
+ -Zone '1' `
+ -Size 'Standard_D2s_v3' `
+ -Credential (Get-Credential)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2a7e6c04-2a6d-42aa-a158-11a84821adec)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/93f74b6b-edf5-4da3-92d4-bdc48e143b8a)
+
+ 4. Once the command completes, use Get-AzVM to list the virtual machines in your resource group.
+ # Code
+ Get-AzVM `
+ -ResourceGroupName 'az104-rg8' `
+ -Status
+
+ 5. Verify your new virtual machine is listed and the Status is Running.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d356e905-1e55-4fe7-a284-551d35ccee2a)
+
+ 6. Use Stop-AzVM to deallocate your virtual machine. Type Yes to confirm.
+
+# Code
+  Stop-AzVM `
+ -ResourceGroupName 'az104-rg8' `
+ -Name 'myPSVM' 
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2928a541-8ba5-4ad6-a17a-99b369aae0df)
+
+ 7. Use Get-AzVM with the -Status parameter to verify the machine is deallocated.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/59b22334-14a0-4d08-99f8-0ce2eccdf422)
