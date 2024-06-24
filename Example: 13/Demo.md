@@ -193,9 +193,11 @@
 
 # Task 3: Create and configure Azure Virtual Machine Scale Sets
 
-- In this task, you will deploy an Azure virtual machine scale set across availability zones. VM Scale Sets reduce the administrative overhead of automation by enabling you to configure metrics or conditions that allow the scale set to horizontally scale, scale in or scale out.
+- In this task, you will deploy an Azure virtual machine scale set across availability zones. VM Scale Sets reduce the administrative overhead of automation by enabling you to configure metrics or conditions that allow the scale set to horizontally scale, scale in, or scale out.
 
 1. In the Azure portal, search for and select Virtual machine scale sets and, on the Virtual machine scale sets blade, click + Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3a7e8dbf-f917-4115-b75c-fdb5295391b4)
 
 2. On the Basics tab of the Create a virtual machine scale set blade, specify the following settings (leave others with their default values) and click Next: Spot 
 
@@ -228,9 +230,17 @@
 
 - Already have a Windows Server license?	Unchecked
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/201cdfb2-614a-4328-824b-59c006ca3096)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e9a1669c-a581-4160-a1ca-23d1f3cc04bb)
+
 3. On the Spot tab, accept the defaults and select Next: Disks >.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/49c04bbe-0d84-441d-b724-21bc8e5bb351)
+
 4. On the Disks tab, accept the default values and click Next: Networking >.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ee79869f-1265-4540-bf9b-02069f5ab9cc)
 
 5. On the Networking page, click the Create Virtual Network link below the Virtual Network textbox and create a new virtual network with the following settings (leave others with their default values). When finished, select OK.
 
@@ -244,15 +254,23 @@
 
 - Subnet range	10.82.0.0/24
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/12a45fb2-349a-4456-aa15-f6058b9fe238)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/b276da14-a724-48ce-94f0-4454714c0d83)
+
 6. In the Networking tab, click the Edit network interface icon to the right of the network interface entry.
 
 7. For the NIC network security group section, select Advanced and then click Create new under the Configure network security group drop-down list.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/64f74419-9308-4cbc-b4ad-860e23bf52f2)
 
 8. On the Create network security group blade, specify the following settings (leave others with their default values):
 
 - Setting	Value
 
 - Name	vmss1-nsg
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a9670da7-4600-4e65-a7e8-4b40850cc715)
 
 9. Click Add an inbound rule and add an inbound security rule with the following settings (leave others with their default values):
 
@@ -272,11 +290,17 @@
 
 - Name	allow-HTTP
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/00b65233-a80b-4344-85ae-5c22026aef8d)
+
 10. Click Add and, back on the Create network security group blade, click OK.
 
 11. In the Edit network interface blade, in the Public IP address section, click Enabled and click OK.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/acfc6028-b055-4ced-9b39-31d085a098ee)
+
 12. In the Networking tab, under the Load balancing section, specify the following (leave others with their default values).
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/48d29e3a-2da8-4984-9993-9d1b01cd0650)
 
 - Setting	Value
 
@@ -284,21 +308,32 @@
 
 - Select a load balancer	Create a load balancer
 
-13. On the Create a load balancer page, specify the load balancer name and take the defaults. Click Create when you are done then Next : Management >.
+13. On the Create a load balancer page, specify the load balancer name and take the defaults. Click Create when you are done then Next: Management >.
 
 - Setting	Value
 
 - Load balancer name	vmss-lb
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/236ebc5f-54a5-44da-b23b-79c944f34407)
 
 14. On the Management tab, specify the following settings (leave others with their default values):
 
 - Setting	Value
 
 - Boot diagnostics	Disable
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/61347626-73db-4809-8064-99f133649707)
+
 15. Click Next: Health >.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6b40b0e2-84f2-46d8-a9fd-ca42b4697bc3)
 
 16. On the Health tab, review the default settings without making any changes and click Next: Advanced >.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d425beb0-1551-400b-8aaa-717ef1eaef0c)
+
 17. On the Advanced tab, click Review + Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4257aaec-f24d-4e1b-8270-1c4c2e81d5bc)
 
 18. On the Review + Create tab, ensure that the validation passed and click Create
