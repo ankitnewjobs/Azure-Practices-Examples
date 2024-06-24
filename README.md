@@ -37,6 +37,11 @@ In this repository,  You will get an Idea about Different Practical Implementati
 - Example: 12 - **Manage Azure Storage**
 
 - Example: 13 - **Manage Virtual Machines**
+ 
+- Example: 14 - **Implement Data Protection**
+
+- Example: 15 - **Implement Monitoring**
+
 
 # Contributing
 
