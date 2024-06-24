@@ -121,3 +121,72 @@
 
 11. Wait for the deployment to complete, then select Go to resource.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9053b667-9386-40a6-ae6e-2935d2dda546)
+
+# VM 1
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/7a331c02-70fb-47e7-baba-0021c05fd360)
+
+# VM 2
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ef115e87-00c8-4573-9837-7c815294a599)
+
+# Task 2: Manage compute and storage scaling for virtual machines
+
+- In this task, you will scale a virtual machine by adjusting its size to a different SKU. Azure provides flexibility in VM size selection so that you can adjust a VM for periods if it needs more (or less) computing and memory allocated. This concept is extended to disks, where you can modify the performance of the disk, or increase the allocated capacity.
+
+1. On the az104-vm1 virtual machine, in the Availability + scale blade, select Size.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/61450091-e339-48ef-a377-ec0d6bd84c45)
+
+2. Set the virtual machine size to DS1_v2 and click Resize. When prompted, confirm the change.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/57584608-cf12-4d8f-b39f-bf58ce9c3fcb)
+
+3. In the Settings area, select Disks.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/357efdfe-5798-4fac-ac0d-0a67cd487e90)
+
+4. Under Data disks select + Create and attach a new disk. Configure the settings (leave other settings at their default values).
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/734eabc8-c89e-40b6-b507-dd1a0cff4a20)
+
+- Setting	Value
+
+- Disk name	vm1-disk1
+
+- Storage type	Standard HDD
+
+- Size (GiB)	32
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/102a3593-e050-4b14-8dd0-f1123957c257)
+
+5. Click Apply.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/418249df-503e-4ffe-b7e1-f03b3994e9e7)
+
+6. After the disk has been created, click Detach (if necessary, scroll to the right to view the detach icon), and then click Apply.
+
+7. Search for and select Disks. From the list of disks, select the vm1-disk1 object.
+
+8. In the Settings blade, select Size + Performance.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6ce80223-c66e-4e91-aac1-1493bd004011)
+
+9. Set the storage type to Standard SSD, and then click Save.
+
+10. Navigate back to the az104-vm1 virtual machine and select Disks.
+
+11. In the Data disk section, select Attach existing disks.
+
+12. In the Disk name drop-down, select VM1-DISK1.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/53684755-cf38-4742-9c29-ca81fddd1ec7)
+
+13. Verify the disk is now Standard SSD.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3353fc89-9762-4adf-8c51-da62a89d849e)
+
+14. Select Apply to save your changes.
+
+# Azure Virtual Machine Scale Sets Architecture Diagram
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f7d89801-bece-470b-90a6-5874a519f619)
