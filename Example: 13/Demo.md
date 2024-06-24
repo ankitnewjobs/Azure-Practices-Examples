@@ -23,3 +23,82 @@
 - Task 6: Create a virtual machine using the CLI (optional 2).
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/babfb797-aee2-40bd-9ffe-05d20f5b38fc)
+
+# Task 1: Deploy zone-resilient Azure virtual machines by using the Azure portal
+
+- In this task, you will deploy two Azure virtual machines into different availability zones by using the Azure portal. Availability zones offer the highest level of uptime SLA for virtual machines at 99.99%. To achieve this SLA, you must deploy at least two virtual machines across different availability zones.
+
+1. Sign in to the Azure portal - https://portal.azure.com.
+
+2. Search for and select Virtual machines, on the Virtual machine's blade, click + Create, and then select in the drop-down Azure virtual machine. Notice your other choices.
+
+3. On the Basics tab, in the Availability zone drop-down menu, place a checkmark next to Zone 2. This should select both Zone 1 and Zone 2.
+
+4. On the Basics tab, continue completing the configuration:
+
+- Setting	Value
+
+- Subscription	the name of your Azure subscription
+
+- Resource group	az104-rg13 (If necessary, click Create new)
+
+- Virtual machine names	az104-vm1 and az104-vm2 (After selecting both availability zones, select Edit names under the VM name field.)
+
+- Region	East US
+
+- Availability options	Availability zone
+
+- Availability zone	Zone 1, 2 (read the note about using virtual machine scale sets)
+
+- Security type	Standard
+
+- Image	Windows Server 2019 Datacenter - x64 Gen2
+
+- Azure Spot instance	unchecked
+
+- Size	Standard D2s v3
+
+- Username	local admin
+
+- Password	Provide a secure password
+
+- Public inbound ports	None
+
+- Would you like to use an existing Windows Server license?	Unchecked
+
+5. Click Next: Disks >, specify the following settings (leave others with their default values):
+
+- Setting	Value
+
+- OS disk type	Premium SSD
+
+- Delete with VM	checked (default)
+
+- Enable Ultra Disk compatibility	Unchecked
+
+6. Click Next: Networking > Take the defaults but do not provide a load balancer.
+
+- Setting	Value
+
+- Delete public IP and NIC when VM is deleted	Checked
+
+- Load balancing options	None
+
+7. Click Next: Management > and specify the following settings (leave others with their default values):
+
+- Setting	Value
+
+- Patch orchestration options	Azure orchestrated
+
+8. Click Next: Monitoring > and specify the following settings (leave others with their default values):
+
+- Setting	Value
+
+- Boot diagnostics	Disable
+
+9. Click Next: Advanced >, take the defaults, then click Review + Create.
+
+10. After the validation, click Create.
+
+11. Wait for the deployment to complete, then select Go to resource.
+
