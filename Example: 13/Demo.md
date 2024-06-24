@@ -337,3 +337,103 @@
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4257aaec-f24d-4e1b-8270-1c4c2e81d5bc)
 
 18. On the Review + Create tab, ensure that the validation passed and click Create
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1bedc324-3b4e-4774-ae84-98daca59f513)
+
+# Task 4: Scale Azure Virtual Machine Scale Sets
+
+- In this task, you scale the virtual machine scale set using a custom scale rule.
+
+1. Select Go to resource or search for and select the vmss1 scale set.
+
+2. Choose Availability + Scaling from the left side menu, then choose Scaling.
+
+# Scale-out rule
+
+1. Select Custom autoscale. Then change the Scale mode to Scale based on metric. And then select Add a rule.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/edba9c7e-7107-43c7-a297-24b466f8a97a)
+
+2. Let’s create a rule that automatically increases the number of VM instances. This rule scales out when the average CPU load is greater than 70% over 10 minutes. When the rule triggers, the number of VM instances is increased by 20%.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0142d9b2-5c36-4fd4-a977-3282b779818d)
+
+- Setting	Value
+
+- Metric source	Current resource (vmss1)
+
+- Metric namespace	Virtual Machine Host
+
+- Metric name	Percentage CPU (review your other choices)
+
+- Operator	Greater than
+
+- Metric threshold to trigger scale action	70
+
+- Duration (minutes)	10
+
+- Time grain statistic	Average
+
+- Operation	Increase percent by (review other choices)
+
+- Cool down (minutes)	5
+
+- Percentage	20
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/7950d487-9538-4022-aaf5-fddda5f449f3)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/96be5e31-c53d-4d4c-8361-f8c1e2711e95)
+
+3. Be sure to Save your changes.
+
+# Scale in rule
+
+1. During evenings or weekends, demand may decrease so it is important to create a scale in rule.
+
+2. Let’s create a rule that decreases the number of VM instances in a scale set. The number of instances should decrease when the average CPU load drops below 30% over 10 minutes. When the rule triggers, the number of VM instances is decreased by 20%.
+
+3. Select Add a rule, adjust the settings, then select Add.
+
+- Setting	Value
+
+- Operator	Less than
+
+- Threshold	30
+
+- Operation	decrease percentage by (review your other choices)
+
+- Percentage	20
+
+4. Be sure to Save your changes.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/5bba9f6e-b78e-4975-96bf-1b9e90891269)
+
+
+# Set the instance limits
+
+- When your autoscale rules are applied, instance limits make sure that you do not scale out beyond the maximum number of instances or scale in beyond the minimum number of instances.
+
+2. Instance limits are shown on the Scaling page after the rules.
+
+- Setting	Value
+
+- Minimum	2
+
+- Maximum	10
+
+- Default	2
+
+3. Be sure to Save your changes
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/82decfbd-385b-4e77-820c-48822273a6ca)
+
+4. On the vmss1 page, select Instances. This is where you would monitor the number of virtual machine instances.
+
+ ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d00bdda0-bd0d-4cef-b145-8cd35f59f1cd)
+
+# vmss1_1
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/5992a438-ca62-4c4b-b38b-e91c6da8d651)
+
+# vmss1_0
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1f8e45a2-96d4-4a74-b0f6-3df4916bba4d)
+
