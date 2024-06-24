@@ -487,3 +487,36 @@
  7. Use Get-AzVM with the -Status parameter to verify the machine is deallocated.
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/59b22334-14a0-4d08-99f8-0ce2eccdf422)
+
+# Task 6: Create a virtual machine using the CLI (option 2)
+
+1. Use the icon (top right) to launch a Cloud Shell session. Alternately, navigate directly to **https://shell.azure.com**
+
+2. Be sure to select Bash. If necessary, configure the shell storage.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a72321aa-2f8f-44cf-9fa0-ca0aa618b966)
+
+3. Run the following command to create a virtual machine. When prompted, provide a username and password for the VM. While you wait check out the az vm create command reference for all the parameters associated with creating a virtual machine.
+
+# code
+az vm create --name myCLIVM --resource-group az104-rg8 --image Ubuntu2204 --admin-username local admin --generate-ssh-keys
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/5679806c-bf24-4b4f-8766-dff0892d10f0)
+
+4. Once the command completes, use az vm show to verify your machine was created.
+
+# code
+  az vm show --name  myCLIVM --resource-group az104-rg8 --show-details
+
+  ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2a79572a-b555-4bd2-9595-f84b2b17305b)
+
+ 5. Verify the powerState is VM Running.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f9f68ed3-c5f5-4643-8bd6-f359a992757e)
+
+6. Use az vm deallocate to deallocate your virtual machine. Type Yes to confirm.
+ 
+ # code
+ az vm deallocate --resource-group az104-rg8 --name myCLIVM
+
+ 7. Use az vm show to ensure the power state is VM deallocated.
