@@ -116,6 +116,8 @@
 
 1. In the Azure portal, search for and select Recovery Services vaults and, on the Recovery Services vaults blade, click + Create.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/7c0358ed-47c6-4e2f-87bf-b7a435eac98e)
+
 2. On the Create Recovery Services vault blade, specify the following settings:
 
 - Settings	Value
@@ -128,16 +130,30 @@
 
 - Region	East US
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e8cd299c-1838-4c5c-9b8c-f17fded75ff7)
+
 3. Click Review + Create, ensure that the validation passes, and then click Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1e688410-5544-4aa7-a656-32ddb3c8a78c)
 
 4. When the deployment is completed, click Go to Resource.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/44b61c28-8446-4456-b762-5b4a5fa10659)
+
 5. In the Settings section, click Properties.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/54e9dd78-131f-4af7-8138-9b6f18f0f217)
 
 6. Select the Update link under the Backup Configuration label.
 
 7. On the Backup Configuration blade, review the choices for Storage replication type. Leave the default setting of Geo-redundant in place and close the blade.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/75479e57-ab4c-43de-be4a-306a837e8875)
+
 8. Select the Update link under Security Settings > Soft Delete and security settings label.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/959b90ca-9772-41c2-b4e4-2111c2151250)
+
 9. On the Security Settings blade, note that Soft Delete (For workload running in Azure) is Enabled. Notice the soft delete retention period is 14 days.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e7fc1d66-68a0-492a-b36f-ba1114da289c)
