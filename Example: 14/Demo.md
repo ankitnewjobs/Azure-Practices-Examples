@@ -157,3 +157,71 @@
 9. On the Security Settings blade, note that Soft Delete (For workload running in Azure) is Enabled. Notice the soft delete retention period is 14 days.
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e7fc1d66-68a0-492a-b36f-ba1114da289c)
+
+# Task 3: Configure Azure virtual machine-level backup
+
+- In this task, you will implement Azure virtual-machine level backup. As part of a VM backup, you will need to define the backup and retention policy that applies to the backup. Different VMs can have different backup and retention policies assigned to them.
+
+1. On the Recovery Services vault blade, click Overview, then click + Backup.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/88630dcd-9108-40ab-8826-786eadd87121)
+
+2. On the Backup Goal blade, specify the following settings:
+
+- Settings	Value
+
+- Where is your workload running?	Azure (notice your other options)
+
+- What do you want to back up?	Virtual machine (notice your other options
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f19f6737-726d-4559-b79e-d90983233d0e)
+
+3. Select Backup.
+
+4. Notice there a two Policy subtypes: Enhanced and Standard. Review the choices and select Standard.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4deca811-1f59-41ed-9e3c-6a8c97761ef3)
+
+5. In Backup policy, select Create a new policy.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0f355d2f-3c43-4545-9c86-7672f32ce030)
+
+6. Define a new backup policy with the following settings (leave others with their default values):
+
+- Setting	Value
+
+- Policy name	az104-backup
+
+- Frequency	Daily
+
+- Time	12:00 AM
+
+- Timezone	the name of your local time zone
+
+- Retain instant recovery snapshot(s) for	2 Days(s)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/beca0d04-8702-4aff-baed-0997c55be298)
+
+7. Click OK to create the policy and then, in the Virtual Machines section, select Add.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/7917e122-b67d-469c-8f47-6212005d1b22)
+
+8. On the Select virtual machines blade, select az-104-10-vm0, click OK, and then back on the Backup blade, click Enable backup.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/48ae7b39-a2f4-418c-a8c2-5b986edcea94)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/985ee992-2fda-4be8-8797-b1e3f19de956)
+
+9. In the Protected items section, click Backup items, and then click the Azure virtual machine entry.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/dbbe91ea-ca18-48d4-b23e-2823bf092fae)
+
+10. Select the View Details link for az104-10-vm0, and review the values of the Backup Pre-Check and Last Backup Status entries.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3de189ea-a0ea-4772-a9a5-b64480597b82)
+
+11. Select Backup now, accept the default value in the Retain Backup Till drop-down list, and click OK.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/dfda6787-faec-4ab7-a925-88079fa1bcc9)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9abe57c9-7c74-4dac-addb-ed3fa480f9d6)
