@@ -298,6 +298,10 @@
 
 1. In the Azure portal, search for and select Recovery Services vaults and, on the Recovery Services vaults blade, click + Create.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/fceebd59-c078-42a8-a9ac-49c2063952b3)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/98f38e42-f81b-4e1e-ad1e-9b28b7761fda)
+
 2. On the Create Recovery Services vault blade, specify the following settings:
 
 - Settings	Value
@@ -308,19 +312,33 @@
 
 - Vault Name	az104-rsv-region2
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/555af314-f5eb-48b4-9c01-45584404af6f)
+
 3. Click Review + Create, ensure that the validation passes, and then click Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/20de236f-1faf-4dae-888a-6bc5e2df6232)
 
 4. Search for and select the az104-10-vm0 virtual machine.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9a1503d2-b5af-4e48-a6b8-c4316021d660)
+
 5. In the Backup + Disaster recovery blade, select Disaster recovery.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/833dcac8-56b6-4534-a431-f651390b9e37)
 
 6. Select Enable replication.
 
 7. On the Basics tab, notice the Target region.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/05737c9b-073f-4748-9395-dca670a53b48)
+
 8. Move to the Advanced Settings tab. Resource selections have been made for you. It is important to review them.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/7827d691-dbee-4209-89ef-83c20b687f70)
+
 9. Verify your subscription, vm resource group, virtual network, and availability (take the default) settings.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/efe930fd-51f8-40e5-b8f3-132cb419849a)
 
 10. In Storage settings select Show details.
 
@@ -332,13 +350,23 @@
 
 11. In Replication settings select Show details. Notice your recovery resources vault in Region 2 was automatically selected.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e5122e1b-1779-497a-b097-a0675188afe3)
+
 12. Select Review + Start replication and then Enable replication.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/15ae2633-4e62-479d-8ca2-3cd267a85505)
 
 13. Once the replication is complete, search for and locate your Recovery Services Vault, az104-rsv-region2. You may need to Refresh the page.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/306cbb58-0faf-4fd0-be5b-b1d2cc973ba1)
+
 14. In the Protected items section, select Replicated items.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/911b0325-94ae-48cb-9685-7be7db343faf)
+
 15. Check that the virtual machine is showing as healthy for the replication health. Note that the status will show the synchronization (starting at 0%) status and ultimately show Protected after the initial synchronization completes.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2a781c1f-2e6b-4827-89bf-76a91decfd53)
 
 16. Select the virtual machine to view more details.
     
