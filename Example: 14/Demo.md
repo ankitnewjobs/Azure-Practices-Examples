@@ -293,3 +293,52 @@
 14. Review the details of the backup job
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f48bf85d-950c-4e07-9b91-faad49fc4c0a)
+
+# Task 5: Enable virtual machine replication
+
+1. In the Azure portal, search for and select Recovery Services vaults and, on the Recovery Services vaults blade, click + Create.
+
+2. On the Create Recovery Services vault blade, specify the following settings:
+
+- Settings	Value
+
+- Subscription	the name of your Azure subscription
+
+- Resource group	az104-rg-region2 (If necessary, select Create new)
+
+- Vault Name	az104-rsv-region2
+
+3. Click Review + Create, ensure that the validation passes, and then click Create.
+
+4. Search for and select the az104-10-vm0 virtual machine.
+
+5. In the Backup + Disaster recovery blade, select Disaster recovery.
+
+6. Select Enable replication.
+
+7. On the Basics tab, notice the Target region.
+
+8. Move to the Advanced Settings tab. Resource selections have been made for you. It is important to review them.
+
+9. Verify your subscription, vm resource group, virtual network, and availability (take the default) settings.
+
+10. In Storage settings select Show details.
+
+- Setting	Value
+
+- Churn for the vm	Normal churn
+
+- Cache storage account	(new) xxx
+
+11. In Replication settings select Show details. Notice your recovery resources vault in Region 2 was automatically selected.
+
+12. Select Review + Start replication and then Enable replication.
+
+13. Once the replication is complete, search for and locate your Recovery Services Vault, az104-rsv-region2. You may need to Refresh the page.
+
+14. In the Protected items section, select Replicated items.
+
+15. Check that the virtual machine is showing as healthy for the replication health. Note that the status will show the synchronization (starting at 0%) status and ultimately show Protected after the initial synchronization completes.
+
+16. Select the virtual machine to view more details.
+    
