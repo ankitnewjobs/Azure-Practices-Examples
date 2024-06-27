@@ -60,7 +60,11 @@
 
 9. Load and select the parameters.json file.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/cf53336f-6b02-4f6b-a806-daa3c89137ae)
+
 10. Save your changes.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/fd471657-897c-4f65-9ac8-4b109d90f1eb)
 
 11. Use the following information to complete the custom deployment fields, leaving all other fields with their default values:
 
@@ -72,9 +76,68 @@
 
 - Region	East US
 
-- Username	local admin
+- Username	as per your choice
 
 - Password	Provide a complex password
 
-- Select Review + Create, then select Create.
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2b34ad27-d6f0-49ad-80d7-22d6d354d40b)
 
+12. Select Review + Create, then select Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4aececc9-bb4b-4b3b-9ff7-aebab7867e7b)
+
+- Vnet:
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/18d12d01-ec3d-4ed7-925b-0f7b1db308e1)
+
+- VM Disk:
+
+  ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e73b17ed-2a49-4d5f-b1d5-5c5ff876ac0e)
+
+- VM:
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1c367a92-9497-4e58-9bfb-60ecfbffb8ae)
+
+- NSG:
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/997f972a-b33c-4bf9-8676-2fb3ae7c1ed6)
+
+- Public IP:
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/fb294d63-4d92-4364-856e-c56e2c624b82)
+
+- Network Interference:
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a9cfb9fc-0159-4bde-9f4a-cfc162395caa)
+
+# Task 2: Create and configure a Recovery Services vault
+
+- In this task, you will create a Recovery Services vault. A Recovery Services vault provides storage for the virtual machine data.
+
+1. In the Azure portal, search for and select Recovery Services vaults and, on the Recovery Services vaults blade, click + Create.
+
+2. On the Create Recovery Services vault blade, specify the following settings:
+
+- Settings	Value
+
+- Subscription	the name of your Azure subscription
+
+- Resource group	az104-rg-region1
+
+- Vault Name	az104-rsv-region1
+
+- Region	East US
+
+3. Click Review + Create, ensure that the validation passes, and then click Create.
+
+4. When the deployment is completed, click Go to Resource.
+
+5. In the Settings section, click Properties.
+
+6. Select the Update link under the Backup Configuration label.
+
+7. On the Backup Configuration blade, review the choices for Storage replication type. Leave the default setting of Geo-redundant in place and close the blade.
+
+8. Select the Update link under Security Settings > Soft Delete and security settings label.
+
+9. On the Security Settings blade, note that Soft Delete (For workload running in Azure) is Enabled. Notice the soft delete retention period is 14 days.
