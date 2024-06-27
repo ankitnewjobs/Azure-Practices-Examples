@@ -256,7 +256,13 @@
 
 5. Search and select your Recovery Services vault.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/71aae854-0c00-4085-ab53-f7c36fc40ead)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/66a26320-ad41-4ede-8dd2-6c5a5c271c54)
+
 6. Select Diagnostic Settings and then select Add diagnostic setting.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/a9c14e2d-fd35-47e7-bacd-13faa79fa7f1)
 
 7. Name the setting Logs and Metrics to storage.
 
@@ -272,12 +278,18 @@
 
 9. In the Destination details, place a checkmark next to Archive to a storage account.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d6a8bb4d-c4c4-440b-b7f0-e9c9501cd619)
+
 10. In the Storage account drop-down field, select the storage account that you deployed earlier in this task.
 
 11. Select Save.
 
 12. Return to your Recovery Services vault, in the Monitoring blade select Backup jobs.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/1da20c81-70cc-489e-9ef2-31d8fcdacfc0)
+
 13. Locate the backup operation for the az104-10-vm0 virtual machine.
 
 14. Review the details of the backup job
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f48bf85d-950c-4e07-9b91-faad49fc4c0a)
