@@ -225,3 +225,59 @@
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/dfda6787-faec-4ab7-a925-88079fa1bcc9)
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9abe57c9-7c74-4dac-addb-ed3fa480f9d6)
+
+# Task 4: Monitor Azure Backup
+
+- In this task, you will deploy an Azure storage account. Then you will configure the vault to send the logs and metrics to the storage account. This repository can then be used with Log Analytics or other third-party monitoring solutions.
+
+1. From the Azure portal, search for and select Storage accounts.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/60c8763d-f639-4d58-ad84-361e09892224)
+
+2. On the Storage accounts page, select Create.
+
+3. Use the following information to define the storage account, then select Review.
+
+- Settings	Value
+
+- Subscription	Your subscription
+
+- Resource group	az104-rg-region1
+
+- Storage account name	Provide a globally unique name
+
+- Region	East US
+  
+- ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2cefc7e2-4693-4de8-9ce2-08a5e8ac1c28)
+
+ 4. On the Review tab, select Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/504c3651-8a66-41c1-8bce-d5489eae9090)
+
+5. Search and select your Recovery Services vault.
+
+6. Select Diagnostic Settings and then select Add diagnostic setting.
+
+7. Name the setting Logs and Metrics to storage.
+
+8. Place a checkmark next to the following log and metric categories:
+
+
+**- Azure Backup Reporting Data**
+**- Add-on Azure Backup Job Data**
+**- Add-on Azure Backup Alert Data**
+**- Azure Site Recovery Jobs**
+**- Azure Site Recovery Events**
+**- Health****
+
+9. In the Destination details, place a checkmark next to Archive to a storage account.
+
+10. In the Storage account drop-down field, select the storage account that you deployed earlier in this task.
+
+11. Select Save.
+
+12. Return to your Recovery Services vault, in the Monitoring blade select Backup jobs.
+
+13. Locate the backup operation for the az104-10-vm0 virtual machine.
+
+14. Review the details of the backup job
