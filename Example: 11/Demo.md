@@ -1,8 +1,8 @@
 # Implement Azure Container Apps
 
-- Lab introduction
+# Lab introduction
 
-In this lab, you learn how to implement and deploy Azure Container Apps.
+- In this lab, you learn how to implement and deploy Azure Container Instances.
 
 # Lab scenario
 
