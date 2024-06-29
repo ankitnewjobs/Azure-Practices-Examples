@@ -370,3 +370,16 @@
 
 16. Select the virtual machine to view more details.
     
+# Key takeaways
+
+- Azure Backup service provides simple, secure, and cost-effective solutions to back up and recover your data.
+
+- Azure Backup can protect on-premises and cloud resources including virtual machines and file shares.
+
+- Azure Backup policies configure the frequency of backups and the retention period for recovery points.
+
+- Azure Site Recovery is a disaster recovery solution that provides protection for your virtual machines and applications.
+
+- Azure Site Recovery replicates your workloads to a secondary site, and in the event of an outage or disaster, you can failover to the secondary site and resume operations with minimal downtime.
+
+- A Recovery Services vault stores your backup data and minimizes management overhead.
