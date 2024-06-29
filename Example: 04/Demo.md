@@ -280,12 +280,14 @@ Task 4: Configure and test resource locks.
 
 **Note: You will need to remove the lock if you intend to delete the resource group.**
 
-# Cleanup your resources
+# Key takeaways
 
-- If you are working with your subscription take a minute to delete the lab resources. This will ensure resources are freed up and cost is minimized. The easiest way to delete the lab resources is to delete the lab resource group.
+- Azure tags are metadata that consists of a key-value pair. Tags describe a particular resource in your environment. In particular, tagging in Azure enables you to label your resources in a logical manne.
 
-- In the Azure portal, select the resource group, select Delete the resource group, Enter the resource group name, and then click Delete.
+- Azure Policy establishes conventions for resources. Policy definitions describe resource compliance conditions and the effect to take if a condition is met. A condition compares a resource property field or a value to a required value. There are many built-in policy definitions and you can customize the policies.
 
-- Using Azure PowerShell, Remove-AzResourceGroup -Name resourceGroupName.
+- The Azure Policy remediation task feature is used to bring resources into compliance based on a definition and assignment. Resources that are non-compliant to a modify or deployIfNotExist definition assignment, can be brought into compliance using a remediation task.
 
-- Using the CLI, az group delete --name resourceGroupName.
+- You can configure a resource lock on a subscription, resource group, or resource. The lock can protect a resource from accidental user deletions and modifications. The lock overrides any user permissions.
+
+- Azure Policy is pre-deployment security practice. RBAC and resource locks are post-deployment security practice.
