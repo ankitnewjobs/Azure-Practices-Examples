@@ -67,3 +67,11 @@
 3. Verify you receive the Your Azure Container Apps app is live message.
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c72db4f8-a97d-4609-a19d-a13ff619ac3f)
+
+# Key takeaways
+
+- Azure Container Apps (ACA) is a serverless platform that allows you to maintain less infrastructure and save costs while running containerized applications.
+
+- Container Apps provides server configuration, container orchestration, and deployment details.
+
+- Workloads on ACA are usually long-running processes like a Web App.
