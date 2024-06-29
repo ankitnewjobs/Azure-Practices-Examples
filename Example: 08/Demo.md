@@ -7,7 +7,9 @@
 # Lab scenario
 
 - Your organization segments core IT apps and services (such as DNS and security services) from other parts of the business, including your manufacturing department.
+
 - However, in some scenarios, apps and services in the core area need to communicate with apps and services in the manufacturing area. In this lab, you configure connectivity between the segmented areas.
+
 - This is a common scenario for separating production from development or separating one subsidiary from another.
 
 - ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8cfceae0-b6cd-4aed-8b76-623f7ab8e3bb)
@@ -47,18 +49,31 @@
 - Setting	Value
 
 - Subscription	your subscription
+
 - Resource group	az104-rg5 (If necessary, Create new. )
+
 - Virtual machine name	CoreServicesVM
+
 - Region	(US) East US
+
 - Availability options	No infrastructure redundancy is required
+
 - Security type	Standard
+
 - Image	Windows Server 2019 Datacenter: x64 Gen2 (notice your other choices)
+
 - Size	Standard_DS2_v3
+
 - Username	ankit
+
 - Password	Provide a complex password
+
 - Public inbound ports	None
+
 - Username	local admin
+
 - Password	Provide a complex password
+
 - Public inbound ports	None
 
   ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/6786a924-eaa1-4ee7-b826-5adc7e4af273)
@@ -71,10 +86,13 @@
 
 - Setting	Value
 
-Name	CoreServicesVnet (Create new)
-Address Range	10.0.0.0/16
-Subnet Name	Core
-Subnet address range	10.0.0.0/24
+- Name	CoreServicesVnet (Create new)
+
+- Address Range	10.0.0.0/16
+
+- Subnet Name	Core
+
+- Subnet address range	10.0.0.0/24
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/44fd3e1c-8aed-4388-b347-f57adf59469f)
 
@@ -105,17 +123,27 @@ Subnet address range	10.0.0.0/24
 
 - Setting	Value
 
-Subscription	your subscription
-Resource group	az104-rg5
-Virtual machine name	ManufacturingVM
-Region	(US) East US
-Security type	Standard
-Availability options	No infrastructure redundancy is required
-Image	Windows Server 2019 Datacenter: x64 Gen2
-Size	Standard_DS2_v3
-Username	ankit
-Password	Provide a complex password
-Public inbound ports	None
+- Subscription	your subscription
+
+- Resource group	az104-rg5
+
+- Virtual machine name	ManufacturingVM
+
+- Region	(US) East US
+
+- Security type	Standard
+
+- Availability options	No infrastructure redundancy is required
+
+- Image	Windows Server 2019 Datacenter: x64 Gen2
+
+- Size	Standard_DS2_v3
+
+- Username	ankit
+
+- Password	Provide a complex password
+
+- Public inbound ports	None
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c571e90a-c1d4-4ec8-88e2-0a2ef9739971)
 
@@ -125,11 +153,15 @@ Public inbound ports	None
 
 6. Use the following information to configure the virtual network, and then select Ok. If necessary, remove or replace the existing address range.
 
-Setting	Value
-Name	ManufacturingVnet
-Address Range	172.16.0.0/16
-Subnet Name	Manufacturing
-Subnet address range	172.16.0.0/24
+- Setting	Value
+
+- Name	ManufacturingVnet
+
+- Address Range	172.16.0.0/16
+
+- Subnet Name	Manufacturing
+
+- Subnet address range	172.16.0.0/24
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/366deccc-db12-4ee6-89aa-98efa1ed1672)
 
@@ -159,15 +191,23 @@ Subnet address range	172.16.0.0/24
 
 - Field	Value
 
-Source type	Virtual machine
-Virtual machine	CoreServicesVM
-Destination-type	Virtual machine
-Virtual machine	ManufacturingVM
-Preferred IP Version	Both
-Protocol	TCP
-Destination port	3389
-Source port	Blank
-Diagnostic tests Default
+- Source type	Virtual machine
+
+- Virtual machine	CoreServicesVM
+
+- Destination-type	Virtual machine
+
+- Virtual machine	ManufacturingVM
+
+- Preferred IP Version	Both
+
+- Protocol	TCP
+
+- Destination port	3389
+
+- Source port	Blank
+
+- Diagnostic tests Default
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/759d3bdf-ec3b-47b7-9dbb-88bcd46b5ca3)
 
@@ -199,21 +239,33 @@ Diagnostic tests Default
 **This virtual network**	 
 
 - Peering link name	CoreServicesVnet-to-ManufacturingVnet
+
 - Allow CoreServicesVnet to access the peered virtual network	selected (default)
+
 - Allow CoreServicesVnet to receive forwarded traffic from the peered virtual network	selected
+
 - Allow gateway in CoreServicesVnet to forward traffic to the peered virtual network	Not selected (default)
+
 - Enable CoreServicesVnt to use the peered virtual networks’ remote gateway	Not selected (default)
 
   **Remote virtual network**	 
 
 - Peering link name	ManufacturingVnet-to-CoreServicesVnet
+- 
 - Virtual network deployment model	Resource manager
+  
 - I know my resource ID	Not selected
+
 - Subscription	your subscription
+  
 - Virtual network	ManufacturingVnet
+
 - Allow ManufacturingVnet to access CoreServicesVnet	selected (default)
+
 - Allow ManufacturingVnet to receive forwarded traffic from CoreServicesVnet	selected
+
 - Allow gateway in CoreServicesVnet to forward traffic to the peered virtual network	Not selected (default)
+
 - Enable ManufacturingVnet to use CoreServicesVnet’s remote gateway	Not selected (default)
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/405ce6f9-2bfd-49f8-ab28-82f650c4876c)
@@ -268,8 +320,9 @@ Diagnostic tests Default
 
 - Setting	Value
 
-Name	perimeter
-Subnet address range	10.0.1.0/24
+- Name	perimeter
+
+- Subnet address range	10.0.1.0/24
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c653b4bb-4bbb-4ab2-8c6c-ffcb6899cd2f)
 
@@ -277,12 +330,17 @@ Subnet address range	10.0.1.0/24
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/0283f7f6-94cc-4d05-b77c-4a7f6d6bece6)
 
-Setting	Value
-Subscription	your subscription
-Resource group	az104-rg5
-Region	East US
-Name	rt-CoreServices
-Propagate gateway routes	No
+- Setting	Value
+
+- Subscription	your subscription
+
+- Resource group	az104-rg5
+
+- Region	East US
+
+- Name	rt-CoreServices
+
+- Propagate gateway routes	No
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/290065b4-06ba-4e2e-9e32-6265d4c472bf)
 
@@ -296,11 +354,15 @@ Propagate gateway routes	No
 
 - Setting	Value
 
-Route name	PerimetertoCore
-Destination type	IP Addresses
-Destination IP addresses	10.0.0.0/16 (core services virtual network)
-Next hop type	Virtual appliance (notice your other choices)
-Next hop address	10.0.1.7 (future NVA)
+- Route name	PerimetertoCore
+
+- Destination type	IP Addresses
+
+- Destination IP addresses	10.0.0.0/16 (core services virtual network)
+
+- Next hop type	Virtual appliance (notice your other choices)
+
+- Next hop address	10.0.1.7 (future NVA)
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2f099b8c-9bbd-4a08-9b3b-392ff118a374)
 
@@ -315,5 +377,20 @@ Next hop address	10.0.1.7 (future NVA)
 
 - Setting	Value
 
-Virtual network	CoreServicesVnet
-Subnet	Core
+- Virtual network	CoreServicesVnet
+
+- Subnet	Core
+
+# Key takeaways
+
+- By default, resources in different virtual networks cannot communicate.
+
+- Virtual network peering enables you to seamlessly connect two or more virtual networks in Azure.
+
+- Peered virtual networks appear as one for connectivity purposes.
+
+- The traffic between virtual machines in peered virtual networks uses the Microsoft backbone infrastructure.
+
+- System defined routes are automatically created for each subnet in a virtual network. User-defined routes override or add to the default system routes.
+
+- Azure Network Watcher provides a suite of tools to monitor, diagnose, and view metrics and logs for Azure IaaS resources.
