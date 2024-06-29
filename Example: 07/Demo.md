@@ -1,4 +1,4 @@
-# Lab - Implement Traffic Management
+# Implement Traffic Management
 
 # Lab introduction
 
