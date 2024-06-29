@@ -520,3 +520,17 @@ az vm create --name myCLIVM --resource-group az104-rg8 --image Ubuntu2204 --admi
  az vm deallocate --resource-group az104-rg8 --name myCLIVM
 
  7. Use az vm show to ensure the power state is VM deallocated.
+
+# Key takeaways
+
+- Azure virtual machines are on-demand, scalable computing resources.
+
+- Azure virtual machines provide both vertical and horizontal scaling options.
+
+- Configuring Azure virtual machines includes choosing an operating system, size, storage and networking settings.
+
+- Azure Virtual Machine Scale Sets let you create and manage a group of load balanced VMs.
+
+- The virtual machines in a Virtual Machine Scale Set are created from the same image and configuration.
+
+- In a Virtual Machine Scale Set the number of VM instances can automatically increase or decrease in response to demand or a defined schedule.
