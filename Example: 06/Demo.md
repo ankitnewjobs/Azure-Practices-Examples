@@ -219,4 +219,5 @@ File share (Create new)	fs-cloudshell
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/7fe23d43-d04f-4129-ba16-c93a6e416f5e)
 
 # Task 4: Deploy a template with the CLI
-**
+
+# To be Continued 
