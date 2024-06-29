@@ -343,4 +343,14 @@
 
   ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/f6db2b28-7485-4570-b7f7-0ba20cfb4fd9)
 
+# Key takeaways
 
+- An Azure storage account contains all your Azure Storage data objects: blobs, files, queues, and tables. The storage account provides a unique namespace for your Azure Storage data that is accessible from anywhere in the world over HTTP or HTTPS.
+
+- Azure storage provides several redundancy models including Locally redundant storage (LRS), Zone-redundant storage (ZRS), and Geo-redundant storage (GRS).
+
+- Azure blob storage allows you to store large amounts of unstructured data on Microsoft’s data storage platform. Blob stands for Binary Large Object, which includes objects such as images and multimedia files.
+
+- Azure file Storage provides shared storage for structured data. The data can be organized in folders.
+
+- Immutable storage provides the capability to store data in a write once, read many (WORM) state. Immutable storage policies can be time-based or legal-hold.
