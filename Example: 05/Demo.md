@@ -404,9 +404,16 @@ IP address	10.1.1.4
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/b039e558-2df6-4ac5-9974-6577e9d561aa)
 
-# Cleanup your resources
-If you are working with your subscription take a minute to delete the lab resources. This will ensure resources are freed up and cost is minimized. The easiest way to delete the lab resources is to delete the lab resource group.
+# Key takeaways
 
-- In the Azure portal, select the resource group, select Delete the resource group, Enter the resource group name, and then click Delete.
-- Using Azure PowerShell, Remove-AzResourceGroup -Name resourceGroupName.
-- Using the CLI, az group delete --name resourceGroupName.
+- A virtual network is a representation of your own network in the cloud.
+
+- When designing virtual networks it is a good practice to avoid overlapping IP address ranges. This will reduce issues and simplify troubleshooting.
+
+- A subnet is a range of IP addresses in the virtual network. You can divide a virtual network into multiple subnets for organization and security.
+
+- network security group contains security rules that allow or deny network traffic. There are default incoming and outgoing rules which you can customize to your needs.
+
+- Application security groups are used to protect groups of servers with a common function, such as web servers or database servers.
+
+- Azure DNS is a hosting service for DNS domains that provides name resolution. You can configure Azure DNS to resolve host names in your public domain. You can also use private DNS zones to assign DNS names to virtual machines (VMs) in your Azure virtual networks.
