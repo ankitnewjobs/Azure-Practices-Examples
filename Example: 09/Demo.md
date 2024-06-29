@@ -215,3 +215,15 @@
 11. Review the test results including Virtual users, Response time, and Requests/sec.
 
 12. Select Stop to complete the test run.
+
+# Key takeaways
+
+- Azure App Services lets you quickly build, deploy, and scale web apps.
+
+- App Service includes support for many developer environments including ASP.NET, Java, PHP, and Python.
+
+- Deployment slots allow you to create separate environments for deploying and testing your web app.
+
+- You can manually or automatically scale a web app to handle additional demand.
+
+- A wide variety of diagnostics and testing tools are available.
