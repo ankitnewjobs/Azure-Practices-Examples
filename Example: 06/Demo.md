@@ -14,6 +14,8 @@ Your team wants to look at ways to automate and simplify resource deployments. Y
 
 - In this task, we will create a managed disk in the Azure portal. Managed disks are storage designed to be used with virtual machines. Once the disk is deployed you will export a template you can use in other deployments.
 
+# Template Link: https://github.com/ankitnewjobs/Azure-Resource-Manager-Templates
+
 1. Sign in to the Azure portal - https://portal.azure.com.
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/e2d4f783-a84c-4c0e-a299-6b912ec10a69)
@@ -30,14 +32,21 @@ Your team wants to look at ways to automate and simplify resource deployments. Y
 
 - Setting	Value
   
-Subscription	your subscription
-Resource Group	az104-rg3 (If necessary, select Create new.)
-Disk name	az104-disk1
-Region	East US
-Availability zone	No infrastructure redundancy is required
-Source type	None
-Performance	Standard HDD (change size)
-Size	32 Gib
+- Subscription	your subscription
+
+- Resource Group	az104-rg3 (If necessary, select Create new.)
+
+- Disk name	az104-disk1
+
+- Region	East US
+
+- Availability zone	No infrastructure redundancy is required
+
+- Source type	None
+
+- Performance	Standard HDD (change size)
+
+- Size	32 Gib
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ffee5d35-d6d2-48d0-b0ff-15cb2f39c73c)
 
@@ -94,6 +103,7 @@ Size	32 Gib
 5. Within the editor pane, make these changes.
 
 - Change disks_az104_disk1_name to disk_name (two places to change)
+
 - Change az104-disk1 to az104-disk2 (one place to change)
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c5765252-3487-430f-9e6d-58dabe907d71)
