@@ -77,3 +77,30 @@ Task 6: Use Azure Monitor log queries.
 5. Take the defaults for subscription and data collection rules, then select Configure.
 
 6. It will take a few minutes for the virtual machine agent to install and configure, proceed to the next step.
+
+# Task 2: Create an alert
+
+- In this task, you create an alert for when a virtual machine is deleted.
+
+1. Continue on the Monitor page , select Alerts.
+
+2. Select Create + and select Alert rule.
+
+3. Select the box for the resource group, then select Apply. This alert will apply to any virtual machines in the resource group. Alternatively, you could just specify one particular machine.
+
+4. Select the Condition tab and then select the See all signals link.
+
+5. Search for and select Delete Virtual Machine (Virtual Machines). Notice the other built-in signals. Select Apply
+
+6. In the Alert logic area (scroll down), review the Event level selections. Leave the default of All selected.
+
+7. Review the Status selections. Leave the default of All selected.
+
+8. Leave the Create an alert rule pane open for the next task.
+
+# Task 3: Configure action group notifications
+
+- In this task, if the alert is triggered send an email notification to the operations team.
+
+1. Continue working on your alert. Select Next: Actions, and then select Create action group.
+
