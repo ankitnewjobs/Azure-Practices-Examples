@@ -86,13 +86,23 @@ Task 6: Use Azure Monitor log queries.
 
 1. In the portal, search for and select Monitor.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/66fb34e2-33c4-4db5-8523-565e2306ed4d)
+
 2. Take a minute to review all the insights, detection, triage, and diagnosis tools that are available.
 
 3. Select View in the VM Insights box, and then select Configure Insights.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/91cf8577-d4b1-4d45-815f-33fb6b7dae3f)
+
 4. Select your virtual machine, and then Enable (twice).
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d434b9e5-e36e-4b90-a5de-c357ffca2e82)
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/2373f560-1b97-4f3f-b0e2-7c464b88b370)
+
 5. Take the defaults for subscription and data collection rules, then select Configure.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/c88a5621-fb6d-44dd-9869-e3b5da2acb8e)
 
 6. It will take a few minutes for the virtual machine agent to install and configure, proceed to the next step.
 
