@@ -30,17 +30,27 @@ Task 6: Use Azure Monitor log queries.
 
 - In this task, you will deploy a virtual machine that will be used to test monitoring scenarios.
 
-1. Download the \Allfiles\Lab11\az104-11-vm-template.json lab files to your computer.
+1. Download the https://github.com/ankitnewjobs/Azure-Implement--Monitoring template.json lab files to your computer.
 
 2. Sign in to the Azure portal - https://portal.azure.com.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3a04030d-dfda-48a7-b3de-5a55ced7685b)
+
 3. From the Azure portal, search for and select Deploy a custom template.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d3b70e99-83ac-4bc9-bcb1-c576d8f853fa)
 
 4. On the custom deployment page, select Build you own template in the editor.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d2157837-fc87-41ad-8ee3-0fef66327595)
+
 5. On the edit template page, select Load file.
 
-6. Locate and select the \Allfiles\Labs11\az104-11-vm-template.json file and select Open.
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9829fc7c-44fb-4f7f-929d-dd4f9ad516dc)
+
+6. Locate and select the template.json file and select Open.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/d308a335-550d-4fc8-a0d4-15dfa5121da3)
 
 7. Select Save.
 
@@ -58,11 +68,19 @@ Task 6: Use Azure Monitor log queries.
 
 - Password	Provide a complex password
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/407033ef-ca95-4c92-a322-60562a8e4802)
+
 9. Select Review + Create, then select Create.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ca66a911-84f8-4ab0-9f2e-954de320aa38)
 
 10. Wait for the deployment to finish, then click Go to resource group.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ce20a786-b382-4489-8bd4-a9e121c1b914)
+
 11. Review what resources were deployed. There should be one virtual network with one virtual machine.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3eee96a4-4fa3-4a22-bc3c-d7fabf9dd1b5)
 
 # Configure Azure Monitor for virtual machines (this will be used in the last task)
 
