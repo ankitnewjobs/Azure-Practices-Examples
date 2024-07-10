@@ -112,25 +112,39 @@ Task 6: Use Azure Monitor log queries.
 
 1. Continue on the Monitor page , select Alerts.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/b05505a7-6ed4-4bf5-8c01-bddb174abcba)
+
 2. Select Create + and select Alert rule.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ddfbe5b4-7818-4d0f-a5a1-c324223515e7)
 
 3. Select the box for the resource group, then select Apply. This alert will apply to any virtual machines in the resource group. Alternatively, you could just specify one particular machine.
 
 4. Select the Condition tab and then select the See all signals link.
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/ff2758f4-b963-4d67-b113-aff324141ece)
+
 5. Search for and select Delete Virtual Machine (Virtual Machines). Notice the other built-in signals. Select Apply
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/5d6f5299-2dea-4658-b48c-fafe3537571a)
+
 6. In the Alert logic area (scroll down), review the Event level selections. Leave the default of All selected.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/82f1a244-39da-4b74-8e91-c5ddf7b556d9)
 
 7. Review the Status selections. Leave the default of All selected.
 
 8. Leave the Create an alert rule pane open for the next task.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/8acb396d-435f-42b9-9fef-40d08d170d7b)
 
 # Task 3: Configure action group notifications
 
 - In this task, if the alert is triggered send an email notification to the operations team.
 
 1. Continue working on your alert. Select Next: Actions, and then select Create action group.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/33cfdacf-fd32-4e57-a9fd-f889d992aad0)
 
 2. On the Basics tab, enter the following values for each setting.
 
@@ -150,6 +164,8 @@ Task 6: Use Azure Monitor log queries.
 
 - Display name	AlertOpsTeam
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/4ba1e993-7724-4df5-b55f-2520d70ec36e)
+
 3. Select Next: Notifications and enter the following values for each setting.
 
 - Setting	Value
@@ -158,7 +174,11 @@ Task 6: Use Azure Monitor log queries.
 
 - Name	VM was deleted
 
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/dee1def5-8e8f-4a3e-9fd7-d339d679ca70)
+
 4. Select Email, and in the Email box, enter your email address, and then select OK.
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/84934331-1f4a-40b6-ab1c-36500175bc6f)
 
 5. Once the action group is created move to the Next: Details tab and enter the following values for each setting.
 
@@ -167,6 +187,8 @@ Task 6: Use Azure Monitor log queries.
 - Alert rule name	VM was deleted
 
 - Alert rule description	A VM in your resource group was deleted
+
+![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/9fa16421-e170-48e1-a9e2-9b3781c44f77)
 
 6. Select Review + create to validate your input, then select Create.
 
