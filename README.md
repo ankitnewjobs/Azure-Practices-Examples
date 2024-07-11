@@ -47,7 +47,7 @@ In this repository,  You will get an Idea about Different Practical Implementati
 
 - Contributions to this repository are welcome! If you have any Azure DevOps-related examples, tutorials, or projects you'd like to share, feel free to submit a pull request.
 
-Happy Learning!
+Happy Learning!!
 
 # Project Maintainers & Contributors
 
