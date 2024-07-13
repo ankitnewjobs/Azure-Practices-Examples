@@ -7,7 +7,7 @@
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/3af60fbe-86e1-428d-9b22-207bf79c635d)
 
 
-# Creating a VM
+# Creating a VM:
 
 ![image](https://github.com/ankitnewjobs/Azure-Practices-Examples/assets/154872782/33e5354d-bea1-42b6-84e6-612054b7ed48)
 
