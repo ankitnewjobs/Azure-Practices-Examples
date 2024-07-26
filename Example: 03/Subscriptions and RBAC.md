@@ -78,7 +78,7 @@ Description	``A custom contributor role for support requests.`
 
 10. Select Review + Create, and then select Create.
 
-# Task 4: Monitor role assignments with the Activity Log
+# Task 3: Monitor role assignments with the Activity Log
 In this task, you view the activity log to determine if anyone has created a new role.
 
 1. In the portal locate the az104-mg1 resource and select Activity log. The activity log provides insight into subscription-level events.
