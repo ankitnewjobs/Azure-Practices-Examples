@@ -282,7 +282,7 @@ Task 4: Configure and test resource locks.
 
 # Key takeaways
 
-- Azure tags are metadata that consists of a key-value pair. Tags describe a particular resource in your environment. In particular, tagging in Azure enables you to label your resources in a logical manne.
+- Azure tags are metadata that consists of a key-value pair. Tags describe a particular resource in your environment. In particular, tagging in Azure enables you to label your resources logically.
 
 - Azure Policy establishes conventions for resources. Policy definitions describe resource compliance conditions and the effect to take if a condition is met. A condition compares a resource property field or a value to a required value. There are many built-in policy definitions and you can customize the policies.
 
@@ -290,4 +290,4 @@ Task 4: Configure and test resource locks.
 
 - You can configure a resource lock on a subscription, resource group, or resource. The lock can protect a resource from accidental user deletions and modifications. The lock overrides any user permissions.
 
-- Azure Policy is pre-deployment security practice. RBAC and resource locks are post-deployment security practice.
+- Azure Policy is a pre-deployment security practice. RBAC and resource locks are post-deployment security practices.
