@@ -6,7 +6,7 @@
 
 # Lab scenario
 
-- To simplify the management of Azure resources in your organization, you have been tasked with implementing the following functionality
+- To simplify the management of Azure resources in your organization, you have been tasked with implementing the following functionality.
 
 - Creating a management group that includes all your Azure subscriptions.
 
