@@ -6,7 +6,7 @@
 
 # Lab scenario
 
-- Your organization has migrated their infrastructure to Azure. It is important that Administrators are notified of any significant infrastructure changes. You plan to examine the capabilities of Azure Monitor, including Log Analytics.
+- Your organization has migrated its infrastructure to Azure. It is important that Administrators are notified of any significant infrastructure changes. You plan to examine the capabilities of Azure Monitor, including Log Analytics.
 
 # Architecture diagram
 
