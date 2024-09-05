@@ -10,7 +10,7 @@
 
 # Azure-Practices-Examples
 
-In this repository,  You will get an Idea about Different Practical Implementation of Azure Services
+In this repository,  You will get an Idea about Different Practical Implementation of Azure Services.
 
 - Example: 01 - **Install and Configure Nginx on Ubuntu**
 
